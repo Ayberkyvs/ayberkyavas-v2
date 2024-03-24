@@ -1,14 +1,14 @@
 import { Badge } from './ui/badge'
 
-function BadgeElement({className = "", children, style = "retro"}: {className: string, children: any, style?: string}) {
+function BadgeElement({className = "", children, variant = "retro"}: {className: string, children: any, variant?: string}) {
     let styles = ""
-    if (style === "retro") {
+    if (variant === "retro") {
         styles = "gradient-retro"
-    }else if (style === "success"){
+    }else if (variant === "success"){
         styles = "bg-green"
-    }else if (style === "warning"){
+    }else if (variant === "warning"){
         styles = "bg-yellow"
-    }else if (style === "danger"){
+    }else if (variant === "danger"){
         styles = "bg-red"
     }
 

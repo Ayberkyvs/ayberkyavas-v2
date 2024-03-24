@@ -1,7 +1,4 @@
 .scroller {
-    width: 100%;
-    max-width: 768px;
-    min-width: 350px;
     overflow: hidden;
   }
   
