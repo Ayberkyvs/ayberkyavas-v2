@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --primary-text: #0A0A0D;
+        --primary-text-60: rgba(0,0,0, 0.6);
+        --light-gray:  rgba(74, 87, 111, 0.7);
+        --gray-100: rgba(48, 52, 77, 0.2);
+        --primary-bg: #FFFFFF;
+        --nav-bg: rgba(255,255,255, 0.2);
+        --nav-menu-bg: rgba(255, 255, 255, 0.7);
+        --nav-border: rgba(82,82,82, 0.2);
+
+        --orange: rgba(255, 105, 40, 0.8);
+        --red: #FF445E;
+        --blue: rgba(5, 96, 255, 0.8);
+        --green: rgba(0, 187, 131, 0.8);
+        --pink: rgba(255, 90, 209, 0.9);
+        --yellow: #F8C231;
+        --black-70: rgba(0, 0, 0, 0.7);
+        --link-border: rgba(0, 0, 0, 0.05);
+        --link-blue: #29A6FF;
+    }
+    .dark {
+        --primary-text: #ECEDEE;
+        --primary-text-60: rgba(255,255,255, 0.6);
+        --light-gray: rgba(114, 120, 136, 0.6);
+        --gray-100: rgba(255, 255, 255, 0.2);
+        --primary-bg: #0A0A0D;
+        --nav-bg: rgba(28, 18, 22, 0.4);
+        --nav-border: rgba(82,82,82, 0.2);
+
+        --orange: rgba(255, 105, 40, 0.8);
+        --red: #FF445E;
+        --blue: rgba(5, 96, 255, 0.8);
+        --green: rgba(0, 187, 131, 0.8);
+        --pink: rgba(255, 90, 209, 0.9);
+        --yellow: #F8C231;
+        --black-70: rgba(0, 0, 0, 0.7);
+        --link-border: rgba(0, 0, 0, 0.05);
+        --link-blue: #29A6FF;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-bg);
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.18;
+    line-height: 22px;
+    font-weight: 500;
+    min-height: 100vh;
+}
+
+.heading-1 {
+    line-height: 1.2em;
+    letter-spacing: -1.5px;
+    color: var(--primary-text);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.gradient-top {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    background-image: url("./assets/bg-gradient.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+.gradient-retro {
+    background: rgb(74,177,241);
+    background: linear-gradient(90deg, rgba(74,177,241,1) 0%, rgba(86,108,236,1) 25%, rgba(215,73,175,1) 75%, rgba(255,124,81,1) 100%);
+}
