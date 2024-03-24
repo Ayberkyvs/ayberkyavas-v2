@@ -47,6 +47,7 @@
 
 body {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -80,6 +81,16 @@ body {
     background-position: center;
     background-size: cover;
     transform: rotate(180deg);
+    z-index: -1;
+}
+.gradient-bottom {
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    background-image: url("./assets/bg-gradient.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: -1;
 }
 .gradient-retro {

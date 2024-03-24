@@ -10,6 +10,8 @@ function BadgeElement({className = "", children, variant = "retro"}: {className:
         styles = "bg-yellow"
     }else if (variant === "danger"){
         styles = "bg-red"
+    }else if (variant === "pink"){
+        styles = "bg-pink"
     }
 
   return (

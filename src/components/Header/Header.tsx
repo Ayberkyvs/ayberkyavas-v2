@@ -12,6 +12,7 @@ export default function Header() {
     <header className="flex items-center justify-between w-full h-fit p-[16px] rounded-2xl bg-nav-bg border-nav-border border-[1px] mt-[24px]">
         <div className="flex items-center w-fit h-fit">
             <img src={headerData.mainLogo} className="w-[25px] mr-[24px]"/>
+            <h3 className="text-white mr-[24px] bg-link-blue px-2 rounded-full text-base">BETA</h3>
             <Navbar data={headerData.navbar}/>
         </div>
         <div className="flex items-center gap-[12px]">
