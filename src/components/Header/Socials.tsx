@@ -11,7 +11,7 @@ type SocialsProps = {
 
 export default function Socials({data}: SocialsProps) {
   return (
-    <ul className="flex gap-[16px] w-fit h-fit text-black dark:text-white">
+    <ul className="flex gap-[16px] w-fit h-fit text-black dark:text-white z-[3]">
         {data.map((item: SocialsItem, index: number) => (
           <a key={index} href={item.link} title={item.title}>
             {item.icon === "Github" ? <Github className="w-[18px] h-[18px]"/> : item.icon === "Linkedin" ? <Linkedin className="w-[18px] h-[18px]"/> : <Instagram className="w-[18px] h-[18px]"/>}

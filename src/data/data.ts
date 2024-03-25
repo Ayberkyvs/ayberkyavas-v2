@@ -13,7 +13,7 @@ import Horizon from "../assets/works/horizon.png"
 import Password from "../assets/works/password.png"
 import NotWhatsapp from "../assets/works/notwhatsapp.png"
 import Ayberk from "../assets/works/ayberk.png"
-
+import { Pin } from "iconoir-react";
 export const data = {
     en: {
         header: {
@@ -58,6 +58,36 @@ export const data = {
                 'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'SCSS',
                 'TailwindCSS', 'ReactJS', 'SQL', 'Router V6', 'API\'S', "C#"
             ],
+        },
+        featured: {
+            title: "PINNED",
+            items: [
+                {
+                    badgeType: "retro",
+                    badgeText: "Upcoming",
+                    image: NotWhatsapp,
+                    title: "NotWhatsapp",
+                    company: "Ayberk Yavaş",
+                    paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
+                },
+                {
+                    badgeType: "warning",
+                    badgeText: "Now",
+                    image: Horizon,
+                    title: "Rocket Competition",
+                    company: "Horizon Rocket",
+                    paragraph: " I am happy to be a part of the Horizon rocket team as a web developer and interface developer of ground computers",
+                    link: "https://horizonrocket.com/"
+                },
+                {
+                    badgeType: "pink",
+                    badgeText: "UPDATE",
+                    image: Password,
+                    title: "Password Generator Extension",
+                    company: "Ayberk Yavaş",
+                    paragraph: "Never use an insecure password again",
+                },
+            ]
         },
         certificates: {
             title: "Certificates & Education",

@@ -1,7 +1,7 @@
 import ProjectCard from './ProjectCard'
 import { motion } from "framer-motion";
 
-export default function ProjectCards({data}: {data: any}) {
+export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
   const ProjectCards = data.items.map((item: string[])=> {
     return(
     <motion.div 
@@ -18,7 +18,7 @@ export default function ProjectCards({data}: {data: any}) {
   return (
     <section className='flex flex-col w-full h-fit mt-[56px]'>
         <div className='w-full h-fit mb-[14px]'>
-            <h3 className='uppercase text-sm text-light-gray tracking-widest'>{data.title}</h3>
+            <h3 className='flex items-center uppercase text-sm text-light-gray tracking-widest'>{data.title} {icon ? <span className='ml-1'>{icon}</span>: ""}</h3>
         </div>
         <div className='flex flex-wrap gap-[14px]'>
           {ProjectCards}
