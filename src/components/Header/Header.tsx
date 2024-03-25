@@ -21,9 +21,9 @@ export default function Header() {
             </div>
             <div className="flex items-center gap-[12px]">
               <Socials data={headerData.socials}/>
-              <Separator orientation="vertical" className="border-light-grey border-[0.5px] h-[18px] w-fit z-[3]"/>
+              <Separator orientation="vertical" className="border-black/50 dark:border-white/50 border-[0.5px] h-[18px] w-fit z-[3]"/>
               <ModeToggle className=" w-[18px] h-[18px] text-black dark:text-white z-[3]"/>
-              <button className="text-primary-text z-[3] flex md:hidden" onClick={()=> setIsOpen(prevState => !prevState)}>{isOpen ? <Xmark /> : <Menu />}</button>
+              <button className="flex md:hidden justify-center items-center text-primary-text z-[3] w-[18px] h-[18px]" onClick={()=> setIsOpen(prevState => !prevState)}>{isOpen ? <Xmark /> : <Menu />}</button>
             </div>
         </div>
         {isOpen &&

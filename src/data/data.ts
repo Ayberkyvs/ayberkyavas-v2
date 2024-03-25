@@ -13,7 +13,7 @@ import Horizon from "../assets/works/horizon.png"
 import Password from "../assets/works/password.png"
 import NotWhatsapp from "../assets/works/notwhatsapp.png"
 import Ayberk from "../assets/works/ayberk.png"
-import { Pin } from "iconoir-react";
+
 export const data = {
     en: {
         header: {
@@ -86,6 +86,7 @@ export const data = {
                     title: "Password Generator Extension",
                     company: "Ayberk Yavaş",
                     paragraph: "Never use an insecure password again",
+                    link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
                 },
             ]
         },
@@ -114,7 +115,7 @@ export const data = {
                     image: Scrimba,
                     title: "The Frontend Developer",
                     company: "Scrimba",
-                    paragraph: "Html, css, javascript, react, Advanced react etc. I will complete the courses and be entitled to receive this certificate.",
+                    paragraph: "A Frontend Course with extensive content that I am working on",
                 },
                 {
                     badgeType: "success",
@@ -171,6 +172,7 @@ export const data = {
                     title: "Password Generator Extension",
                     company: "Ayberk Yavaş",
                     paragraph: "Never use an insecure password again",
+                    link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
                 },
                 {
                     badgeType: "warning",
