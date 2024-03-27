@@ -5,6 +5,7 @@ import { ModeToggle } from "../mode-toggle"
 import { useContext, useState } from "react"
 import { DataContext } from "@/App"
 import { Menu, Xmark } from "iconoir-react";
+import { Link } from "react-router-dom"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,8 +13,8 @@ export default function Header() {
   return (
     <header className="absolute top-0 w-screen max-w-[708px] justify-between h-fit p-[16px] rounded-2xl bg-nav-bg border-nav-border border-[1px] mt-[24px]">
         <div className="flex justify-between items-center w-full h-fit">
-            <div className="flex">
-              <img src={headerData.mainLogo} className="w-[25px] mr-[24px]"/>
+            <div className="flex items-center h-fit">
+              <Link to="/"><img src={headerData.mainLogo} alt="Website logo with letters 'AY' in rainbow-like colors" className="w-[25px] mr-[24px] object-cover"/></Link>
               <h3 className="flex text-white mr-[24px] bg-link-blue px-2 rounded-full text-xs items-center justify-center">BETA</h3>
               <div className="w-fit h-fit hidden md:flex">
               <Navbar data={headerData.navbar}/>

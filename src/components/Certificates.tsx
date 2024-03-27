@@ -1,6 +1,7 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Certificate from "./Certificate";
+import ProjectCard from "./ProjectCard";
 
 export default function Certificates({data}: {data: any}) {
   const targetRef = useRef(null);
@@ -19,7 +20,7 @@ export default function Certificates({data}: {data: any}) {
       id='card'
       className='w-full md:w-fit h-fit'
     >
-      <Certificate data={item} />
+      <ProjectCard data={item} isResponsive={false} />
     </motion.div>
   )
   })

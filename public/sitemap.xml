@@ -6,25 +6,4 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- GitHub -->
-  <url>
-    <loc>https://github.com/Ayberkyvs</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- LinkedIn -->
-  <url>
-    <loc>https://www.linkedin.com/in/ayberksch/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Instagram -->
-  <url>
-    <loc>https://www.instagram.com/ayberksch</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>

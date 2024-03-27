@@ -13,6 +13,9 @@ import Horizon from "../assets/works/horizon.png"
 import Password from "../assets/works/password.png"
 import NotWhatsapp from "../assets/works/notwhatsapp.png"
 import Ayberk from "../assets/works/ayberk.png"
+import Figma from "../assets/appstack/figma.png"
+import Spotify from "../assets/appstack/spotify.png"
+import Discord from "../assets/appstack/discord.png"
 
 export const data = {
     en: {
@@ -20,30 +23,35 @@ export const data = {
             mainLogo: mainLogo,
             navbar: [
                 {
-                    text: "home",
-                    link: "/"
+                    text: "app stack",
+                    link: "appstack",
                 },
                 {
-                    text: "game?",
-                    link: "https://tenzies.ayberkyavas.com/"
+                    text: "projects",
+                    link: "projects",
                 },
             ],
             socials: [
                 {
+                    title: "Buymeacoffee",
+                    link: "https://www.buymeacoffee.com/ayberksch",
+                    icon: "Buymeacoffee",
+                },
+                {
                     title: "Github",
                     link: "https://github.com/Ayberkyvs",
-                    icon: "Github"
+                    icon: "Github",
                 },
                 {
                     title: "Linkedin",
                     link: "https://www.linkedin.com/in/ayberksch/",
-                    icon: "Linkedin"
+                    icon: "Linkedin",
                 },
                 {
                     title: "Instagram",
                     link: "https://www.instagram.com/ayberksch",
-                    icon: "Instagram"
-                }
+                    icon: "Instagram",
+                },
             ]
         },
         hero: {
@@ -71,7 +79,7 @@ export const data = {
                     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
                 },
                 {
-                    badgeType: "warning",
+                    badgeType: "yellow",
                     badgeText: "Now",
                     image: Horizon,
                     title: "Rocket Competition",
@@ -110,7 +118,7 @@ export const data = {
                     paragraph: "A professional certification I'm working on",
                 },
                 {
-                    badgeType: "warning",
+                    badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
                     title: "The Frontend Developer",
@@ -118,7 +126,7 @@ export const data = {
                     paragraph: "A Frontend Course with extensive content that I am working on",
                 },
                 {
-                    badgeType: "success",
+                    badgeType: "green",
                     badgeText: "completed",
                     image: Scrimba,
                     title: "Advanced React",
@@ -127,7 +135,7 @@ export const data = {
                     link: "https://scrimba.com/certificate/uvvkNNUx/greact"
                 },
                 {
-                    badgeType: "success",
+                    badgeType: "green",
                     badgeText: "completed",
                     image: Turkcell,
                     title: "React Development",
@@ -136,7 +144,7 @@ export const data = {
                     link: "https://gelecegiyazanlar.turkcell.com.tr/certificate/dWlkMzEzNTI2Y2lkNDcxOTZxaWQxNTRlbmQ="
                 },
                 {
-                    badgeType: "warning",
+                    badgeType: "yellow",
                     badgeText: "now",
                     image: Izmirekonomi,
                     title: "Computer Programming",
@@ -149,15 +157,17 @@ export const data = {
             title: "projects & works",
             items: [
                 {
+                    id: 1,
                     badgeType: "pink",
                     badgeText: "Update",
                     image: Ayberk,
                     title: "Portfolio Website",
                     company: "Ayberk Yavaş",
                     paragraph: "I am developing my portfolio website. (you are currently using)",
-                    link: "https://ayberkyavas.com/"
+                    link: `projects/1`,
                 },
                 {
+                    id: 2,
                     badgeType: "retro",
                     badgeText: "Upcoming",
                     image: NotWhatsapp,
@@ -166,6 +176,7 @@ export const data = {
                     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
                 },
                 {
+                    id: 3,
                     badgeType: "pink",
                     badgeText: "UPDATE",
                     image: Password,
@@ -175,7 +186,8 @@ export const data = {
                     link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
                 },
                 {
-                    badgeType: "warning",
+                    id: 4,
+                    badgeType: "yellow",
                     badgeText: "Now",
                     image: Horizon,
                     title: "Rocket Competition",
@@ -184,7 +196,8 @@ export const data = {
                     link: "https://horizonrocket.com/"
                 },
                 {
-                    badgeType: "success",
+                    id: 5,
+                    badgeType: "green",
                     badgeText: "Completed",
                     image: Parkpin,
                     title: "Parkpin",
@@ -193,7 +206,8 @@ export const data = {
                     link: "https://github.com/Ayberkyvs/parkpin/tree/main"
                 },
                 {
-                    badgeType: "success",
+                    id: 6,
+                    badgeType: "green",
                     badgeText: "Completed",
                     image: Izmirekonomi,
                     title: "Gameathon",
@@ -202,7 +216,8 @@ export const data = {
                     link: "https://gameathon.ieu.edu.tr/index.php"
                 },
                 {
-                    badgeType: "success",
+                    id: 7,
+                    badgeType: "green",
                     badgeText: "Completed",
                     image: Digime,
                     title: "Frontend Internship",
@@ -211,7 +226,8 @@ export const data = {
                     link: "https://digime3d.com/"
                 },
                 {
-                    badgeType: "success",
+                    id: 8,
+                    badgeType: "green",
                     badgeText: "completed",
                     image: Pinyin,
                     title: "Pinyin Marine",
@@ -220,6 +236,36 @@ export const data = {
                     link: "https://www.pinyin-marine.com/"
                 }
             ]
-        }
+        },
+        appstack: [
+            {
+                badgeType: "pink",
+                badgeText: "Design",
+                image: Figma,
+                title: "Figma",
+                paragraph: "Figma is my design tool of choice. I do every design work from planning, ui design to creating beautiful illustrations",
+            },
+            {
+                badgeType: "green",
+                badgeText: "Entertainment",
+                image: Spotify,
+                title: "Spotify",
+                paragraph: "Spotify offers the best music discovery and recommendation app as well as podcast place.",
+            },
+            {
+                badgeType: "linkblue",
+                badgeText: "Communication",
+                image: Discord,
+                title: "Discord",
+                paragraph: "The voice and text chat features are top-notch and the app is easy to use.",
+            },
+            {
+                badgeType: "pink",
+                badgeText: "Design",
+                image: Figma,
+                title: "Figma",
+                paragraph: "Figma is my design tool of choice. I do every design work from planning, ui design to creating beautiful illustrations",
+            },
+        ]
     },
 }

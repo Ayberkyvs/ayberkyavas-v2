@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Hero({data}: {data: any}) {
   return (
-    <section className="w-full h-fit overflow-hidden mt-[126px]">
+    <section className="w-full h-fit overflow-hidden">
         <div className="flex items-center gap-[16px] w-fit h-[102px] mb-[18px]">
             <img src={data.image} alt="Ayberk Memoji" className="w-[100px] h-[100px] bg-link-blue rounded-full" draggable={false}/>
             <div>
