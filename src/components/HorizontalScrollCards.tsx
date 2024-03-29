@@ -1,9 +1,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import Certificate from "./Certificate";
 import ProjectCard from "./ProjectCard";
 
-export default function Certificates({data}: {data: any}) {
+export default function HorizontalScrollCards({data}: {data: any}) {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -11,7 +10,7 @@ export default function Certificates({data}: {data: any}) {
 
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"]);
 
-  const cards = data.items.map((item:string[])=> {
+  const cards = data.items.map((item:string[], index: number)=> {
     return(
     <motion.div 
       initial={{opacity: 0, y: -20}}
@@ -19,6 +18,7 @@ export default function Certificates({data}: {data: any}) {
       transition={{duration: 0.5}}
       id='card'
       className='w-full md:w-fit h-fit'
+      key={index}
     >
       <ProjectCard data={item} isResponsive={false} />
     </motion.div>

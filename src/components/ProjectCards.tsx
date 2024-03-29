@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard'
 import { motion } from "framer-motion";
 
 export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
-  const ProjectCards = data.items.map((item: string[])=> {
+  const ProjectCards = data.items.map((item: string[], index: number)=> {
     return(
     <motion.div 
       initial={{opacity: 0, y: -20}}
@@ -10,6 +10,7 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
       transition={{duration: 1}}
       id='card'
       className='w-full md:w-fit h-fit'
+      key={index}
     >
       <ProjectCard data={item}/>
     </motion.div>

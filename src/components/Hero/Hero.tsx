@@ -14,7 +14,7 @@ export default function Hero({data}: {data: any}) {
             </div>
         </div>
         <p className="w-full h-fit text-primary-text text-base md:text-xl mb-[18px]">{data.paragraph}</p>
-        <motion.a initial={{y: -20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 1}} href={data.resume} download={true} className="flex justify-center items-center gradient-retro text-white py-2 rounded-full mb-[18px] text-sm">Download Resume <DownloadCloudIcon className="ml-2 text-sm"/></motion.a>
+        <motion.a initial={{y: -20, opacity: 0}} animate={{y: 0, opacity: 1}} transition={{duration: 1}} href={data.resume} download={true} className="flex justify-center items-center gradient-retro text-white py-1 rounded-full mb-[18px] text-sm">Download Resume <DownloadCloudIcon className="ml-2 text-sm"/></motion.a>
         <p className="text-light-gray mb-[16px]">{data.quota} <span className="text-transparent bg-link-blue bg-gradient-to-r from-current to-pink bg-clip-text">{data.company}</span></p>
         <div className="w-screen overflow-hidden flex md:block">
           <ScrollingList data={data.skills}/>

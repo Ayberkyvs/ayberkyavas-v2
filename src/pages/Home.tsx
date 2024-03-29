@@ -2,8 +2,9 @@ import Hero from "@/components/Hero/Hero";
 import ProjectCards from "@/components/ProjectCards";
 import { DataContext } from "@/App"
 import { useContext } from "react"
-import Certificates from "@/components/Certificates";
+import HorizontalScrollCards from "@/components/HorizontalScrollCards";
 import { Pin } from "iconoir-react";
+import Sayhi from "@/components/Sayhi/Sayhi";
 
 export default function Home() {
   const data = useContext(DataContext).en
@@ -12,7 +13,8 @@ export default function Home() {
         <Hero data={data.hero}/>
         <ProjectCards data={data.featured} icon={<Pin />}/>
         <ProjectCards data={data.certificates}/>
-        <Certificates data={data.works} />
+        <HorizontalScrollCards data={data.works} />
+        <Sayhi />
     </main>
   )
 }

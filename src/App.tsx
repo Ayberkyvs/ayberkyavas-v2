@@ -7,15 +7,19 @@ import {
 } from "react-router-dom";
 import MainLayout from './layout/MainLayout';
 import Home from "./pages/Home"
-import { createContext } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { data } from './data/data';
 import Projects from './pages/Projects';
 import ProjectDetail, { loader } from './pages/ProjectDetail';
 import "./server"
 import AppStack from './pages/AppStack';
+import Loader from './pages/Loader';
+import NotFound from './pages/NotFound';
 
 export const DataContext = createContext(data)
+
 export default function App() {
+  const [loading, setLoading] = useState(true)
   const router = createBrowserRouter([
     {
       path: "/",
@@ -43,16 +47,29 @@ export default function App() {
         {
           path: '/appstack',
           element: <AppStack />,
-        }
+        },
+        {
+          path: "*",
+          element: <NotFound />
+        },
       ],
     },
   ]);
+  useEffect(()=> {
+    const timer = setTimeout(()=> {
+      setLoading(false)
+    }, 600)
+
+    return () => clearTimeout(timer);
+  }, [])
   return (
-    <DataContext.Provider value={data}>  
-      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <RouterProvider router={router} />
-      </ThemeProvider>
-    </DataContext.Provider>
+    <>
+      <DataContext.Provider value={data}>  
+        <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+          {loading ? <Loader /> : <RouterProvider router={router} />}
+        </ThemeProvider>
+      </DataContext.Provider>
+    </>
   )
 }
 

@@ -6,16 +6,23 @@ import Scrimba from "../assets/certificates/scrimba.png";
 import Meta from "../assets/certificates/meta.png";
 import Izmirekonomi from "../assets/certificates/izmirekonomi.png";
 import IBM from "../assets/certificates/ibm.png";
-import Pinyin from "../assets/works/pinyinmarine.png"
+import Pinyin from "../assets/works/PinyinMarine/pinyinmarine.png"
 import Digime from "../assets/works/digime.png"
 import Parkpin from "../assets/works/parkpin.png"
-import Horizon from "../assets/works/horizon.png"
+import Horizon from "../assets/works/HorizonRocket/horizon.png"
 import Password from "../assets/works/password.png"
 import NotWhatsapp from "../assets/works/notwhatsapp.png"
-import Ayberk from "../assets/works/ayberk.png"
+import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.png"
 import Figma from "../assets/appstack/figma.png"
 import Spotify from "../assets/appstack/spotify.png"
 import Discord from "../assets/appstack/discord.png"
+import Vscode from "../assets/appstack/vscode.png"
+import Canary from "../assets/appstack/canary.png"
+import Copilot from "../assets/appstack/copilot.png"
+import Github from "../assets/appstack/github.png"
+import Pixlre from "../assets/appstack/pixlre.png"
+import Powertoys from "../assets/appstack/powertoys.png"
+import Steam from "../assets/appstack/steam.png"
 
 export const data = {
     en: {
@@ -23,7 +30,7 @@ export const data = {
             mainLogo: mainLogo,
             navbar: [
                 {
-                    text: "app stack",
+                    text: "stack",
                     link: "appstack",
                 },
                 {
@@ -79,13 +86,14 @@ export const data = {
                     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
                 },
                 {
+                    id: 4,
                     badgeType: "yellow",
                     badgeText: "Now",
                     image: Horizon,
                     title: "Rocket Competition",
                     company: "Horizon Rocket",
-                    paragraph: " I am happy to be a part of the Horizon rocket team as a web developer and interface developer of ground computers",
-                    link: "https://horizonrocket.com/"
+                    paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
+                    link: "/projects/4"
                 },
                 {
                     badgeType: "pink",
@@ -160,11 +168,11 @@ export const data = {
                     id: 1,
                     badgeType: "pink",
                     badgeText: "Update",
-                    image: Ayberk,
+                    image: PortfolioWebsiteLogo,
                     title: "Portfolio Website",
                     company: "Ayberk Yavaş",
                     paragraph: "I am developing my portfolio website. (you are currently using)",
-                    link: `projects/1`,
+                    link: `/projects/1`,
                 },
                 {
                     id: 2,
@@ -192,8 +200,8 @@ export const data = {
                     image: Horizon,
                     title: "Rocket Competition",
                     company: "Horizon Rocket",
-                    paragraph: " I am happy to be a part of the Horizon rocket team as a web developer and interface developer of ground computers",
-                    link: "https://horizonrocket.com/"
+                    paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
+                    link: "/projects/4"
                 },
                 {
                     id: 5,
@@ -232,25 +240,46 @@ export const data = {
                     image: Pinyin,
                     title: "Pinyin Marine",
                     company: "Pinyin Marine",
-                    paragraph: "The website I made for Pinyin Marine company",
-                    link: "https://www.pinyin-marine.com/"
+                    paragraph: "The website is my first corporate work for Pinyin Marine' company.",
+                    link: "/projects/8"
                 }
             ]
         },
         appstack: [
             {
+                badgeType: "red",
+                badgeText: "Development",
+                image: Vscode,
+                title: "VS Code",
+                paragraph: "VS Code is a preferred editor for development, offering powerful and flexible features."
+            },
+            {
+                badgeType: "retro",
+                badgeText: "AI",
+                image: Copilot,
+                title: "Microsoft Copilot",
+                paragraph: "Microsoft Copilot is your AI-powered coding assistant, enhancing coding efficiency."
+            },
+            {
+                badgeType: "yellow",
+                badgeText: "Browser",
+                image: Canary,
+                title: "Chrome Canary",
+                paragraph: "Chrome Canary allows users to experience the latest web technologies and features."
+            },
+            {
                 badgeType: "pink",
                 badgeText: "Design",
                 image: Figma,
                 title: "Figma",
-                paragraph: "Figma is my design tool of choice. I do every design work from planning, ui design to creating beautiful illustrations",
+                paragraph: "Figma is a design tool of choice for UI design and creating beautiful illustrations."
             },
             {
                 badgeType: "green",
                 badgeText: "Entertainment",
                 image: Spotify,
                 title: "Spotify",
-                paragraph: "Spotify offers the best music discovery and recommendation app as well as podcast place.",
+                paragraph: "Spotify is renowned for its music discovery and offers a vast library of podcasts."
             },
             {
                 badgeType: "linkblue",
@@ -260,12 +289,33 @@ export const data = {
                 paragraph: "The voice and text chat features are top-notch and the app is easy to use.",
             },
             {
+                badgeType: "green",
+                badgeText: "Entertainment",
+                image: Steam,
+                title: "Steam",
+                paragraph: "Steam is the ultimate gaming platform with a vast library and social networking features."
+            },
+            {
+                badgeType: "red",
+                badgeText: "Development",
+                image: Github,
+                title: "Github",
+                paragraph: "GitHub is the leading software development platform for version control and collaboration."
+            },
+            {
                 badgeType: "pink",
                 badgeText: "Design",
-                image: Figma,
-                title: "Figma",
-                paragraph: "Figma is my design tool of choice. I do every design work from planning, ui design to creating beautiful illustrations",
+                image: Pixlre,
+                title: "Pixlr E",
+                paragraph: "Pixlr e offers intuitive web-based image editing with a suite of powerful tools."
             },
+            {
+                badgeType: "retro",
+                badgeText: "Tool",
+                image: Powertoys,
+                title: "Microsoft Powertoys",
+                paragraph: "Microsoft Powertoys provides a set of utilities for power users to tune and streamline their Windows experience."
+            }
         ]
     },
 }

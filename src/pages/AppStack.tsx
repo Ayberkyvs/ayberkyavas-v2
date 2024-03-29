@@ -1,7 +1,7 @@
 import { DataContext } from "@/App";
-import ProjectCard from "@/components/ProjectCard";
 import Stackcards from "@/components/Stackcards";
 import { useContext } from "react";
+import { motion } from "framer-motion";
 
 export default function AppStack() {
     const data = useContext(DataContext).en.appstack
@@ -16,10 +16,21 @@ export default function AppStack() {
             </div>
         </div>
 
-        <div className="w-full max-w-[492px] h-fit">
+        <div className="flex flex-col justify-center items-center w-full max-w-[492px] h-fit">
+            <h3 className='flex items-center uppercase text-sm text-light-gray tracking-widest mb-[16px]'>apps</h3>
             {
                 data.map((item)=> {
-                    return <Stackcards data={item}/>
+                    return (
+                        <motion.div 
+                        initial={{opacity: 0, x: -20}}
+                        whileInView={{opacity: 1, x: 0}}
+                        transition={{duration: 1}}
+                        id='card'
+                        className='w-full md:w-fit h-fit'
+                        >
+                            <Stackcards data={item}/>
+                        </motion.div>
+                    )
                 })
             }
         </div>

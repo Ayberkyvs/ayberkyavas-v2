@@ -45,7 +45,21 @@
     }
 }
 
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px var(--primary-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-text);
+    outline: 1px solid slategrey;
+}
+
 body {
+    scroll-behavior: smooth;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -61,7 +75,6 @@ body {
     line-height: 22px;
     font-weight: 500;
     overflow-x: hidden;
-    padding-bottom: 100px;
 }
 
 .heading-1 {

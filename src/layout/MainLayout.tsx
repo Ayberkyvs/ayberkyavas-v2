@@ -1,6 +1,8 @@
 import Header from "@/components/Header/Header"
 import { Outlet } from "react-router-dom"
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer/Footer";
+import Scrolltotop from "@/components/Scrolltotop/Scrolltotop";
 
 export default function MainLayout() {
   return (
@@ -8,6 +10,8 @@ export default function MainLayout() {
         <motion.div className='gradient-top w-full max-w-[1440px] h-[659px]' draggable={false} initial={{opacity: 0 }} animate={{opacity: 1}} transition={{duration: 1.5}} role="img"></motion.div> 
           <Header />
           <Outlet />
+          <Footer />
+          <Scrolltotop />
         <motion.div className='gradient-bottom w-full max-w-[1440px] h-[659px]' draggable={false} initial={{opacity: 0 }} animate={{opacity: 1}} transition={{duration: 1.5}} role="img"></motion.div> 
     </div>
   )

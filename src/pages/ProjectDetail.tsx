@@ -1,8 +1,7 @@
 import { Separator } from "@radix-ui/react-separator";
 import { CoffeeCup, Github, Link, Linkedin } from "iconoir-react";
-import { redirect, useLoaderData, LoaderFunction } from "react-router-dom";
+import { redirect, useLoaderData, LoaderFunction, Navigate } from "react-router-dom";
 
-//! Olmayan id'de redirect yönlendirmiyor. ProjectDetail yine de renderlanıyor
 export const loader: LoaderFunction = async ({ params }) => {
     try {
       const response = await fetch(`/api/projects/${params.id}`);
@@ -27,9 +26,12 @@ type ProjectData = {
 
 
 export default function ProjectDetail() {
-const { title, paragraph, image, content, links } = useLoaderData() as ProjectData
+    const { title, paragraph, image, content, links } = useLoaderData() as ProjectData
+    if (!(title || paragraph || image || content || links)){
+        return <Navigate to={'/'}/>
+    }
 
-  return (
+    return (
     <section className='flex flex-col justify-center items-center w-full h-fit pt-[136px] md:pt-[126px]'>
         <div className="flex flex-col justify-center items-center max-w-[500px] w-full h-[180px] mb-[24px]">
             <h1 className="text-2xl mb-[12px] text-transparent bg-link-blue bg-gradient-to-r from-current to-pink bg-clip-text font-bold">{title}</h1>
@@ -49,14 +51,13 @@ const { title, paragraph, image, content, links } = useLoaderData() as ProjectDa
                 )
             })
         }
-
         <div className="flex flex-col justify-center items-center w-full h-fit text-primary-text max-w-[500px]">
             <h3 className='flex items-center uppercase text-sm text-light-gray tracking-widest mb-[16px]'>Links</h3>
             <div className="flex gap-[24px]">
         {
-            links?.map((item: any)=> {
+            links?.map((item: any, index: number)=> {
                 return (
-                    <a href={item.link}>{item.icon === "link" ? <Link /> 
+                    <a href={item.link} key={index}>{item.icon === "link" ? <Link /> 
                     : item.icon === "github" ? <Github /> 
                     : item.icon === "linkedin" ? <Linkedin />
                     : item.icon === "buymeacoffe" ? <CoffeeCup /> : <Link />}
@@ -66,7 +67,6 @@ const { title, paragraph, image, content, links } = useLoaderData() as ProjectDa
         }
             </div>
         </div>
-
     </section>
-  )
+    )
 }
