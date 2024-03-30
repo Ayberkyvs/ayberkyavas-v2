@@ -1,5 +1,5 @@
 import { createServer, Model, Response } from "miragejs"
-import PortfolioWebsiteBanner from "./assets/works/PortfolioWebsite/banner.png"
+import PortfolioWebsiteBanner from "./assets/works/PortfolioWebsite/banner.webp"
 import PinyinMarineBanner from "./assets/works/PinyinMarine/banner.webp"
 import HorizonRocketBanner from "./assets/works/HorizonRocket/banner.webp"
 

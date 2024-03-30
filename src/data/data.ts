@@ -1,28 +1,32 @@
-import mainLogo from "../assets/mainLogo.png"
-import Memoji from "../assets/ayberk_memoji.png";
+import mainLogo from "../assets/mainLogo.webp"
+import Memoji from "../assets/ayberk_memoji.webp";
+
 import AyberkResume from "../assets/resume/ayberk_resume.pdf"
-import Turkcell from "../assets/certificates/turkcell.png";
-import Scrimba from "../assets/certificates/scrimba.png";
-import Meta from "../assets/certificates/meta.png";
-import Izmirekonomi from "../assets/certificates/izmirekonomi.png";
-import IBM from "../assets/certificates/ibm.png";
-import Pinyin from "../assets/works/PinyinMarine/pinyinmarine.png"
-import Digime from "../assets/works/digime.png"
-import Parkpin from "../assets/works/parkpin.png"
-import Horizon from "../assets/works/HorizonRocket/horizon.png"
-import Password from "../assets/works/password.png"
-import NotWhatsapp from "../assets/works/notwhatsapp.png"
-import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.png"
-import Figma from "../assets/appstack/figma.png"
-import Spotify from "../assets/appstack/spotify.png"
-import Discord from "../assets/appstack/discord.png"
-import Vscode from "../assets/appstack/vscode.png"
-import Canary from "../assets/appstack/canary.png"
-import Copilot from "../assets/appstack/copilot.png"
-import Github from "../assets/appstack/github.png"
-import Pixlre from "../assets/appstack/pixlre.png"
-import Powertoys from "../assets/appstack/powertoys.png"
-import Steam from "../assets/appstack/steam.png"
+
+import Turkcell from "../assets/certificates/turkcell.webp";
+import Scrimba from "../assets/certificates/scrimba.webp";
+import Meta from "../assets/certificates/meta.webp";
+import Izmirekonomi from "../assets/certificates/izmirekonomi.webp";
+import IBM from "../assets/certificates/ibm.webp";
+
+import Pinyin from "../assets/works/PinyinMarine/pinyinmarine.webp"
+import Digime from "../assets/works/digime.webp"
+import Parkpin from "../assets/works/parkpin.webp"
+import Horizon from "../assets/works/HorizonRocket/horizon.webp"
+import Password from "../assets/works/password.webp"
+import NotWhatsapp from "../assets/works/notwhatsapp.webp"
+import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.webp"
+
+import Figma from "../assets/appstack/figma.webp"
+import Spotify from "../assets/appstack/spotify.webp"
+import Discord from "../assets/appstack/discord.webp"
+import Vscode from "../assets/appstack/vscode.webp"
+import Brave from "../assets/appstack/brave.webp"
+import Copilot from "../assets/appstack/copilot.webp"
+import Github from "../assets/appstack/github.webp"
+import Pixlre from "../assets/appstack/pixlre.webp"
+import Powertoys from "../assets/appstack/powertoys.webp"
+import Steam from "../assets/appstack/steam.webp"
 
 export const data = {
     en: {
@@ -263,9 +267,9 @@ export const data = {
             {
                 badgeType: "yellow",
                 badgeText: "Browser",
-                image: Canary,
-                title: "Chrome Canary",
-                paragraph: "Chrome Canary allows users to experience the latest web technologies and features."
+                image: Brave,
+                title: "Brave",
+                paragraph: "Brave is an open source web browser software built on Chromium."
             },
             {
                 badgeType: "pink",

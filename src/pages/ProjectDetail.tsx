@@ -1,5 +1,5 @@
 import { Separator } from "@radix-ui/react-separator";
-import { CoffeeCup, Github, Link, Linkedin } from "iconoir-react";
+import { CoffeeCup, Github, Link, Linkedin, Mail } from "iconoir-react";
 import { redirect, useLoaderData, LoaderFunction, Navigate } from "react-router-dom";
 
 export const loader: LoaderFunction = async ({ params }) => {
@@ -35,18 +35,18 @@ export default function ProjectDetail() {
     <section className='flex flex-col justify-center items-center w-full h-fit pt-[136px] md:pt-[126px]'>
         <div className="flex flex-col justify-center items-center max-w-[500px] w-full h-[180px] mb-[24px]">
             <h1 className="text-2xl mb-[12px] text-transparent bg-link-blue bg-gradient-to-r from-current to-pink bg-clip-text font-bold">{title}</h1>
-            <p className="text-base text-center text-primary-text mb-[12px]">{paragraph}</p>
+            <p className="text-base text-center text-primary-text mb-[12px] leading-[1.5em]">{paragraph}</p>
             <Separator className="w-full border-[1px] border-black/50 dark:border-white/50"/>
         </div>
         <div className="w-full h-[422px] mb-[48px]">
             <img src={image} alt="Project Banner" className="w-full h-full object-cover" />
         </div>
         {
-            content?.map((item: any)=> {
+            content?.map((item: any, index: number)=> {
                 return(
-                    <div className="w-full h-fit mb-[48px] max-w-[500px] ">
+                    <div className="w-full h-fit mb-[48px] max-w-[500px]" key={index}>
                         <h3 className='flex items-center uppercase text-sm text-light-gray tracking-widest mb-[16px]'>{item.title}</h3>
-                        <p className="text-primary-text text-base">{item.paragraph}</p>
+                        <p className="text-primary-text text-base leading-[1.5em]">{item.paragraph}</p>
                     </div>
                 )
             })
@@ -60,7 +60,9 @@ export default function ProjectDetail() {
                     <a href={item.link} key={index}>{item.icon === "link" ? <Link /> 
                     : item.icon === "github" ? <Github /> 
                     : item.icon === "linkedin" ? <Linkedin />
-                    : item.icon === "buymeacoffe" ? <CoffeeCup /> : <Link />}
+                    : item.icon === "buymeacoffe" ? <CoffeeCup /> 
+                    : item.icon === "email" ? <Mail />
+                    : <Link />}
                     </a>
                 )
             })

@@ -72,7 +72,7 @@ body {
     background: var(--primary-bg);
     font-family: "Inter", sans-serif;
     letter-spacing: -0.18;
-    line-height: 22px;
+    line-height: 1.5em;
     font-weight: 500;
     overflow-x: hidden;
 }
@@ -89,7 +89,7 @@ body {
     position: absolute;
     top: 0;
     overflow: hidden;
-    background-image: url("./assets/bg-gradient.png");
+    background-image: url("./assets/bg-gradient.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,7 +100,7 @@ body {
     position: absolute;
     bottom: 0px;
     overflow: hidden;
-    background-image: url("./assets/bg-gradient.png");
+    background-image: url("./assets/bg-gradient.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

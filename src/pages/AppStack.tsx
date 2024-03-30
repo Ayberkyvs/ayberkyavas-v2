@@ -19,7 +19,7 @@ export default function AppStack() {
         <div className="flex flex-col justify-center items-center w-full max-w-[492px] h-fit">
             <h3 className='flex items-center uppercase text-sm text-light-gray tracking-widest mb-[16px]'>apps</h3>
             {
-                data.map((item)=> {
+                data.map((item, index: number)=> {
                     return (
                         <motion.div 
                         initial={{opacity: 0, x: -20}}
@@ -27,6 +27,7 @@ export default function AppStack() {
                         transition={{duration: 1}}
                         id='card'
                         className='w-full md:w-fit h-fit'
+                        key={index}
                         >
                             <Stackcards data={item}/>
                         </motion.div>

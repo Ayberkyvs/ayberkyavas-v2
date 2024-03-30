@@ -19,7 +19,7 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
   return (
     <section className='flex flex-col w-full h-fit mt-[56px]'>
         <div className='w-full h-fit mb-[14px]'>
-            <h3 className='flex items-center uppercase text-sm text-light-gray tracking-widest'>{data.title} {icon ? <span className='ml-1'>{icon}</span>: ""}</h3>
+            <h2 className='flex items-center uppercase text-sm text-light-gray tracking-widest'>{data.title} {icon ? <span className='ml-1'>{icon}</span>: ""}</h2>
         </div>
         <div className='flex flex-wrap gap-[14px]'>
           {ProjectCards}
