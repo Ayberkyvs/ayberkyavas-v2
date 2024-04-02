@@ -2,6 +2,7 @@ import { createServer, Model, Response } from "miragejs"
 import PortfolioWebsiteBanner from "./assets/works/PortfolioWebsite/banner.webp"
 import PinyinMarineBanner from "./assets/works/PinyinMarine/banner.webp"
 import HorizonRocketBanner from "./assets/works/HorizonRocket/banner.webp"
+import GameathonBanner from "./assets/works/Gameathon/banner.webp"
 
 createServer({
     models: {
@@ -39,7 +40,7 @@ createServer({
         });    
         server.create("project", {
             id: 4,
-            title: "Horizon Rocket",
+            title: "Teknofest Rocket Competition: Horizon Rocket",
             paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
             image: HorizonRocketBanner,
             content: [
@@ -76,6 +77,51 @@ createServer({
                     icon: "email", 
                     title: "Email",
                     link: "mailto:contact@horizonrocket.com"
+                },
+            ]
+        });  
+        server.create("project", {
+            id: 6,
+            title: "Gameathon Admin Panel",
+            paragraph: "I have independently developed a registration website and an admin panel for the IEU Game Development Event.",
+            image: GameathonBanner,
+            content: [
+                {
+                    title: "What is Gameathon",
+                    paragraph: "Gameathon is an intense event that challenges participants to use their creativity and technical skills to develop new and fun games within just one day. This marathon typically starts early in the morning, and participants work through the night to create a playable game prototype by the end of the designated time. Gameathon combines education and entertainment, offering participants the opportunity to enhance their collaboration, problem-solving, and creative thinking skills. During the event, teams or individuals showcase their talents in areas such as game design, programming, graphic design, and sound design. Gameathon also provides a chance for participants to explore new technologies, meet new people, and connect with potential employers or investors. These types of events require participants to produce creative solutions within a limited timeframe and are often conducted at a fast pace. At the end of a Gameathon, there is usually an evaluation by a jury, and the best games are awarded. However, the primary goal of a Gameathon is for participants to have fun and learn.",
+                }, 
+                {
+                    title: "My Role",
+                    paragraph: "My role in the Gameathon event was to develop a registration website. I implemented specific algorithms to ensure that all applications met the event’s criteria. Once the applications were received, I directed the data to the admin panel I created, enabling its management through the panel. Additionally, the admin panel featured functionalities for conducting draws and sharing announcements. While my responsibilities in the web domain were comprehensive, I also contributed to the event by serving as a director, managing stage and sound operations throughout"},
+                {
+                    title: "Technologies I Utilize",
+                    paragraph: "For the development of the website, I utilized technologies such as HTML, CSS, JavaScript, PHP, and MySQL. In my role as a director, I employed tools like OBS and Photoshop, along with specific devices to manage the production aspects.",
+                },
+                {
+                    title: "Learn More",
+                    paragraph: "You can get detailed information from the links below.",
+                },
+            ],
+            links: [
+                {
+                    icon: "link",
+                    title: "Website",
+                    link: "https://gameathon.ieu.edu.tr/index.php"
+                },
+                {
+                    icon: "link",
+                    title: "Izmir Universty of Economics News",
+                    link: "https://vs.ieu.edu.tr/tr/news/type/read/id/8273"
+                },
+                {
+                    icon: "github", 
+                    title: "Github",
+                    link: "https://github.com/Ayberkyvs/gameathon"
+                },
+                {
+                    icon: "linkedin", 
+                    title: "Linkedin",
+                    link: "https://www.linkedin.com/posts/ayberksch_gameathon-oyungeliagntirme-innovation-activity-7145095232555069440-qF0f?utm_source=share&utm_medium=member_desktop"
                 },
             ]
         });        

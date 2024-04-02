@@ -28,7 +28,7 @@ type ProjectData = {
 export default function ProjectDetail() {
     const { title, paragraph, image, content, links } = useLoaderData() as ProjectData
     if (!(title || paragraph || image || content || links)){
-        return <Navigate to={'/'}/>
+        return <Navigate to={'/*'}/>
     }
 
     return (

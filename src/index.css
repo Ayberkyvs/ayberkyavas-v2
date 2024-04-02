@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-Bold.ttf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-Regular.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
 
 @layer base {
     :root {
@@ -89,18 +102,17 @@ body {
     position: absolute;
     top: 0;
     overflow: hidden;
-    background-image: url("./assets/bg-gradient.webp");
+    background-image: url("./assets/bg-gradient-header.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: rotate(180deg);
     z-index: -1;
 }
 .gradient-bottom {
     position: absolute;
     bottom: 0px;
     overflow: hidden;
-    background-image: url("./assets/bg-gradient.webp");
+    background-image: url("./assets/bg-gradient-footer.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

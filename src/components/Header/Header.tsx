@@ -30,7 +30,7 @@ export default function Header() {
         </div>
         {isOpen &&
         <div className="w-fit h-fit flex md:hidden">
-          <Navbar data={headerData.navbar} isMobile={true}/>
+          <Navbar data={headerData.navbar} isMobile={true} setIsOpen={setIsOpen}/>
         </div>
         }
     </header>

@@ -82,31 +82,34 @@ export const data = {
             title: "PINNED",
             items: [
                 {
-                    badgeType: "retro",
-                    badgeText: "Upcoming",
-                    image: NotWhatsapp,
-                    title: "NotWhatsapp",
-                    company: "Ayberk Yavaş",
-                    paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
-                },
-                {
                     id: 4,
                     badgeType: "yellow",
                     badgeText: "Now",
                     image: Horizon,
-                    title: "Rocket Competition",
+                    title: "Teknofest Rocket Competition",
                     company: "Horizon Rocket",
                     paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
                     link: "/projects/4"
                 },
                 {
-                    badgeType: "pink",
-                    badgeText: "UPDATE",
-                    image: Password,
-                    title: "Password Generator Extension",
-                    company: "Ayberk Yavaş",
-                    paragraph: "Never use an insecure password again",
-                    link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
+                    id: 6,
+                    badgeType: "green",
+                    badgeText: "Completed",
+                    image: Izmirekonomi,
+                    title: "Gameathon Admin Panel",
+                    company: "Izmir University of Economics",
+                    paragraph: "I have independently developed a registration website and an admin panel for the IEU Game Development Event.",
+                    link: "/projects/6"
+                },
+                {
+                    id: 5,
+                    badgeType: "green",
+                    badgeText: "Completed",
+                    image: Parkpin,
+                    title: "Parkpin Smart Car Park",
+                    company: "Ayberk & Çetin",
+                    paragraph: "Parkpin Smart Parking is an application that allows users to view all parking lots on a map, obtain information about the parking lots, reserve a spot, and make online payments.",
+                    link: "https://github.com/LoyalEnv0y/ParkPin-V2"
                 },
             ]
         },
@@ -122,8 +125,8 @@ export const data = {
                     paragraph: "The certificate I will receive after completing the full-stack course given by IBM",
                 },
                 {
-                    badgeType: "retro",
-                    badgeText: "Upcoming",
+                    badgeType: "yellow",
+                    badgeText: "now",
                     image: Meta,
                     title: "Frontend Developer",
                     company: "Meta",
@@ -202,7 +205,7 @@ export const data = {
                     badgeType: "yellow",
                     badgeText: "Now",
                     image: Horizon,
-                    title: "Rocket Competition",
+                    title: "Teknofest Rocket Competition",
                     company: "Horizon Rocket",
                     paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
                     link: "/projects/4"
@@ -212,20 +215,20 @@ export const data = {
                     badgeType: "green",
                     badgeText: "Completed",
                     image: Parkpin,
-                    title: "Parkpin",
+                    title: "Parkpin Smart Car Park",
                     company: "Ayberk & Çetin",
-                    paragraph: "I developed the frontend, my friend Çetin Tekin developed the backend.",
-                    link: "https://github.com/Ayberkyvs/parkpin/tree/main"
+                    paragraph: "Parkpin Smart Parking is an application that allows users to view all parking lots on a map, obtain information about the parking lots, reserve a spot, and make online payments.",
+                    link: "https://github.com/LoyalEnv0y/ParkPin-V2"
                 },
                 {
                     id: 6,
                     badgeType: "green",
                     badgeText: "Completed",
                     image: Izmirekonomi,
-                    title: "Gameathon",
+                    title: "Gameathon Admin Panel",
                     company: "Izmir University of Economics",
-                    paragraph: "I not only provided the website and application infrastructure for this event, but also served as the director throughout the event.",
-                    link: "https://gameathon.ieu.edu.tr/index.php"
+                    paragraph: "I have independently developed a registration website and an admin panel for the IEU Game Development Event.",
+                    link: "/projects/6"
                 },
                 {
                     id: 7,
