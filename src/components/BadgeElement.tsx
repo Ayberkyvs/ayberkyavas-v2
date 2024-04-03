@@ -1,6 +1,6 @@
 import { Badge } from './ui/badge'
 
-function BadgeElement({className = "", children, variant = "retro"}: {className: string, children: any, variant?: string}) {
+export default function BadgeElement({className = "", children, variant = "retro"}: {className: string, children: any, variant?: string}) {
     let styles = ""
     if (variant === "retro") {
         styles = "gradient-retro"
@@ -22,5 +22,3 @@ function BadgeElement({className = "", children, variant = "retro"}: {className:
     <Badge className={`${className} ${styles}`}>{children}</Badge>
   )
 }
-
-export default BadgeElement

@@ -7,12 +7,15 @@
     src: url('../src/assets/fonts/Inter-Bold.ttf') format('woff2');
     font-weight: bold;
     font-style: normal;
-  }
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'Inter';
     src: url('../src/assets/fonts/Inter-Regular.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
   
 
