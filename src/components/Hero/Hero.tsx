@@ -6,16 +6,16 @@ export default function Hero({data}: {data: any}) {
   return (
     <section className="w-full h-fit overflow-hidden">
         <div 
-        className="flex items-center gap-[16px] w-fit h-[102px] mb-[18px]">
-            <img src={data.image} alt="Ayberk Memoji" className="w-[100px] h-[100px] bg-link-blue rounded-full" draggable={false}/>
+        className="flex items-center gap-[16px] w-fit h-[102px] ">
+            <img src={data.image} alt="Ayberk Memoji" className="w-[84px] h-[84px] bg-link-blue rounded-full" draggable={false}/>
             <div>
-                <h1 className="flex items-center justify-center gap-2 heading-1 mb-[4px] whitespace-nowrap">{data.title}  <BadgeCheck className="text-link-blue w-[25px] h-[25px]"/></h1>
-                <p className="text-light-gray text-base font-semibold leading-[1.5em]">{data.subtitle}</p>
+                <h1 className="flex items-center justify-center gap-2 heading-1 mb-[4px] whitespace-nowrap font-semibold">{data.title}  <BadgeCheck className="text-link-blue w-[24px] h-[24px]"/></h1>
+                <p className="text-light-gray text-base font-semibold leading-6">{data.subtitle}</p>
             </div>
         </div>
-        <p className="w-full h-fit text-primary-text text-base md:text-xl mb-[18px] leading-[1.5em]">{data.paragraph}</p>
-        <a href={data.resume} download={true} className="flex justify-center items-center gradient-retro text-white py-1 rounded-full mb-[18px] text-sm">Download Resume <DownloadCloudIcon className="ml-2 text-sm"/></a>
-        <p className="text-light-gray mb-[16px] leading-[1.5em]">{data.quota} <span className="text-transparent bg-link-blue bg-gradient-to-r from-current to-pink bg-clip-text">{data.company}</span></p>
+        <p className="w-full h-fit leading-6 font-normal text-primary-text text-base md:text-xl mt-[18px]">Experienced <strong>Front-end Developer</strong> with proficiency in JavaScript, TypeScript, React, and databases, skilled in creating innovative web designs and efficiently resolving complex code issues.</p>
+        <p className="text-light-gray mt-[16px] leading-6 text-lg font-medium">{data.quota} <span className="font-semibold text-transparent bg-blue bg-gradient-to-r from-current to-pink bg-clip-text">{data.company}</span></p>
+        <a href={data.resume} download={true} className="flex justify-center items-center mt-[16px] gradient-retro text-white py-1 rounded-full mb-[18px] text-sm w-full">Download Resume <DownloadCloudIcon className="ml-2 text-sm"/></a>
         <div className="w-screen overflow-hidden flex md:block">
           <ScrollingList data={data.skills}/>
         </div>

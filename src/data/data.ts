@@ -7,7 +7,8 @@ import Turkcell from "../assets/certificates/turkcell.webp";
 import Scrimba from "../assets/certificates/scrimba.webp";
 import Meta from "../assets/certificates/meta.webp";
 import Izmirekonomi from "../assets/certificates/izmirekonomi.webp";
-import IBM from "../assets/certificates/ibm.webp";
+// import IBM from "../assets/certificates/ibm.webp";
+import FreeCodeCamp from "../assets/certificates/freeCodeCamp.webp";
 
 import Pinyin from "../assets/works/PinyinMarine/pinyinmarine.webp"
 import Digime from "../assets/works/digime.webp"
@@ -116,29 +117,46 @@ export const data = {
         certificates: {
             title: "Certificates & Education",
             items: [
-                {
-                    badgeType: "retro",
-                    badgeText: "Upcoming",
-                    image: IBM,
-                    title: "Full-Stack Developer",
-                    company: "IBM",
-                    paragraph: "The certificate I will receive after completing the full-stack course given by IBM",
-                },
-                {
-                    badgeType: "yellow",
-                    badgeText: "now",
-                    image: Meta,
-                    title: "Frontend Developer",
-                    company: "Meta",
-                    paragraph: "A professional certification I'm working on",
-                },
+                // {
+                //     badgeType: "retro",
+                //     badgeText: "Upcoming",
+                //     image: IBM,
+                //     title: "Back-End Javascript Developer",
+                //     company: "IBM",
+                //     paragraph: "The certificate I will receive after completing the full-stack course given by IBM",
+                // },
+                // {
+                //     badgeType: "yellow",
+                //     badgeText: "now",
+                //     image: Meta,
+                //     title: "Front-End Developer",
+                //     company: "Meta",
+                //     paragraph: "A professional certification I'm working on",
+                // },
                 {
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
-                    title: "The Frontend Developer",
+                    title: "The Front-End Developer",
                     company: "Scrimba",
                     paragraph: "A Frontend Course with extensive content that I am working on",
+                },
+                {
+                    badgeType: "green",
+                    badgeText: "completed",
+                    image: Meta,
+                    title: "Programming with Javascript",
+                    company: "Meta",
+                    paragraph: "I have completed Meta’s 42-hour JavaScript course. I earned a certificate with a success rate of 97.73%.",
+                },
+                {
+                    badgeType: "green",
+                    badgeText: "completed",
+                    image: FreeCodeCamp,
+                    title: "Responsive Web Design",
+                    company: "freeCodeCamp",
+                    paragraph: "I have successfully completed 300 hours of HTML and CSS training.",
+                    link: "https://www.freecodecamp.org/certification/ayberksch/responsive-web-design",
                 },
                 {
                     badgeType: "green",

@@ -1,4 +1,3 @@
-import "./ScrollingList.css"
 export default function ScrollingList({data}: {data: []}){
   return (
     <div>
