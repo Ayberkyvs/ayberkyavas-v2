@@ -7,13 +7,13 @@ const BackgroundGradient = lazy(()=> import("@/components/BackgroundGradient"));
 
 export default function MainLayout() {
   return (
-    <div className='flex flex-col justify-center items-center w-screen max-w-[708px] px-[10px] md:p-0'>
+    <main className='flex flex-col justify-center items-center w-screen max-w-[708px] px-[10px] md:p-0'>
       <BackgroundGradient variant="header" />
         <Header />
         <Outlet />
         <Footer />
         <Scrolltotop />
       <BackgroundGradient variant="footer" /> 
-    </div>
+    </main>
   )
 }

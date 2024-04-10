@@ -7,6 +7,7 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
     <motion.div 
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
+      viewport={{ once: true }}
       transition={{duration: 1}}
       id='card'
       className='w-full md:w-fit h-fit'
