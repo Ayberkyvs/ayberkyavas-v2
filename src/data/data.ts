@@ -148,6 +148,7 @@ export const data = {
                     title: "Programming with Javascript",
                     company: "Meta",
                     paragraph: "I have completed Meta’s 42-hour JavaScript course. I earned a certificate with a success rate of 97.73%.",
+                    link: "https://coursera.org/share/ab82b952a8e859f2f7bf40bf894632c7",
                 },
                 {
                     badgeType: "green",

@@ -94,7 +94,6 @@ body {
 }
 
 .heading-1 {
-    /* line-height: 1.2em; */
     letter-spacing: -1.5px;
     color: var(--primary-text);
     font-size: 28px;
