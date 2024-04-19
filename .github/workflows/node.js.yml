@@ -26,10 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
+    - run: npm i
     - run: npm run build
-    - run: git checkout build
-    - run: git checkout main dist
-    - run: git add dist
-    - run: git commit -m "Update dist folder"
-    - run: git push origin build
