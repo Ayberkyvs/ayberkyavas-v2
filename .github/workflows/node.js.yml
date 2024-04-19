@@ -28,3 +28,10 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
+    - name: Deploy dist folder
+        run: |
+          git checkout build
+          git checkout main dist
+          git add dist
+          git commit -m "Update dist folder"
+          git push origin build
