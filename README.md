@@ -12,7 +12,7 @@ The project is completed, open to development and new features may come.
   
 <img src="https://cdn.discordapp.com/attachments/1192957146334232649/1233870035890475099/image.png?ex=662eaa84&is=662d5904&hm=4284a85f099e362038bd6db5d059607d147ffb6748259c15f51dcc1d96f62fcd&" alt="ayberkyavas.com screenshot" width="100%" height="auto">
 
-<img src="https://cdn.discordapp.com/attachments/1192957146334232649/1233870126210875485/image.png?ex=662eaa9a&is=662d591a&hm=8fb866e8ca090056ba99b11f15d058252641cb7bf3f8514ea40d0dd5e441638b&" alt="ayberkyavas.com screenshot" width="100%" height="auto">
+<img src="https://cdn.discordapp.com/attachments/1192957146334232649/1233872386097680514/image.png?ex=662eacb5&is=662d5b35&hm=7829da0d702e8e90dbc2db5d1e4bc2038145a13460f7c70646ec9b8a3eb08caa&" alt="ayberkyavas.com screenshot" width="100%" height="auto">
 
 ## Installation and Setup Instructions
 
