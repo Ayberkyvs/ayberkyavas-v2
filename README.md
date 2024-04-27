@@ -16,8 +16,6 @@ The project is completed, open to development and new features may come.
 
 ## Installation and Setup Instructions
 
-#### Example:  
-
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
 Installation:
