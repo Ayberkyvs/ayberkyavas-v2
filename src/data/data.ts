@@ -69,8 +69,8 @@ export const data = {
         hero: {
             image: Memoji,
             title: "ayberk yavaş",
-            subtitle: "Frontend Developer",
-            paragraph: "An experienced frontend developer with a successful track record in developing innovative web designs and features. Proficient in HTML, CSS, SCSS, Tailwind, JavaScript, TypeScript, React, and databases, with the ability to quickly learn new technologies. Demonstrated success in identifying and resolving complex code issues.",
+            subtitle: "Front-End Developer",
+            paragraph: "An experienced Front-End Developer with a successful track record in developing innovative web designs and features. Proficient in HTML, CSS, SCSS, Tailwind, JavaScript, TypeScript, React, and databases, with the ability to quickly learn new technologies. Demonstrated success in identifying and resolving complex code issues.",
             resume: AyberkResume,
             quota: "I enjoy coding for",
             company: "@myself",
@@ -202,8 +202,8 @@ export const data = {
                 },
                 {
                     id: 2,
-                    badgeType: "retro",
-                    badgeText: "Upcoming",
+                    badgeType: "red",
+                    badgeText: "PAUSED",
                     image: NotWhatsapp,
                     title: "NotWhatsapp",
                     company: "Ayberk Yavaş",
@@ -211,8 +211,8 @@ export const data = {
                 },
                 {
                     id: 3,
-                    badgeType: "pink",
-                    badgeText: "UPDATE",
+                    badgeType: "red",
+                    badgeText: "PAUSED",
                     image: Password,
                     title: "Password Generator Extension",
                     company: "Ayberk Yavaş",

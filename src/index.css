@@ -74,25 +74,24 @@ body::-webkit-scrollbar-thumb {
     outline: 1px solid slategrey;
 }
 
-body {
-    scroll-behavior: smooth;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--primary-bg);
-    font-family: "Inter", sans-serif;
-    letter-spacing: -0.18;
-    line-height: 1.5em;
-    font-weight: 500;
-    overflow-x: hidden;
+body{
+  position: relative;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.18;
+  line-height: 1.5em;
+  font-weight: 500;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
 }
-
 .heading-1 {
     letter-spacing: -1.5px;
     color: var(--primary-text);
@@ -127,6 +126,7 @@ body {
 /* Kayan Yazılar CSS */
 .scroller {
     overflow: hidden;
+    opacity: 0.9;
   }
   
   .scroller__inner {
