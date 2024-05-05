@@ -76,7 +76,7 @@ export const data = {
             company: "@myself",
             skills: [
                 'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'SCSS',
-                'TailwindCSS', 'ReactJS', 'SQL', 'Router V6', 'API\'S', "C#"
+                'TailwindCSS', 'ReactJS', 'SQL', 'Router V6', 'API\'S', "C#", "Git & Github"
             ],
         },
         featured: {
@@ -129,7 +129,7 @@ export const data = {
                 //     badgeType: "yellow",
                 //     badgeText: "now",
                 //     image: Meta,
-                //     title: "Front-End Developer",
+                //     title: "Front-End Developer Proffesional",
                 //     company: "Meta",
                 //     paragraph: "A professional certification I'm working on",
                 // },
@@ -140,6 +140,15 @@ export const data = {
                     title: "The Front-End Developer",
                     company: "Scrimba",
                     paragraph: "A Frontend Course with extensive content that I am working on",
+                },
+                {
+                    badgeType: "green",
+                    badgeText: "completed",
+                    image: Meta,
+                    title: "Version Control",
+                    company: "Meta",
+                    paragraph: "I have completed Meta’s 13-hour Version Control course. I learned detailed information about Bash, Git, Github.",
+                    link: "https://coursera.org/share/5a302cea4079eff8fe242141706256dc",
                 },
                 {
                     badgeType: "green",
