@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import ProjectCard from './ProjectCard'
 import { motion } from "framer-motion";
+import { ChevronDown } from 'lucide-react';
 
 export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
   const [renderCards, setRenderCards] = useState<any[]>([])
@@ -44,7 +45,7 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
           {renderCards}
         </div>
         <div className='flex justify-center items-center'>
-          {renderCards.length === ProjectCards.length ? null : <span className='flex text-link-blue text-[16px] cursor-pointer' onClick={()=> loadMore()}>Load More</span>} 
+          {renderCards.length === ProjectCards.length ? null : <span className='flex text-link-blue text-[16px] cursor-pointer' onClick={()=> loadMore()}>Show More <ChevronDown /></span>} 
         </div>
     </section>
   )
