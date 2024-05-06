@@ -28,7 +28,7 @@ export default function HorizontalScrollCards({data}: {data: any}) {
     <section ref={targetRef} className="relative h-[300vh] bg-transparent">
       <div className="sticky top-0 flex flex-col w-full h-screen justify-center items-start overflow-hidden">
       <div className='w-full h-fit mb-[10px]'>
-          <h3 className='uppercase text-sm text-light-gray tracking-widest'>{data.title}</h3>
+          <h3 className='uppercase text-sm text-light-gray tracking-widest'>{data.title} ({data.items.length})</h3>
       </div>
         <motion.div style={{ x }} className="flex gap-4">
           {cards}
