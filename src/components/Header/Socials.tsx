@@ -11,7 +11,7 @@ export default function Socials({className, data}: {className: string, data: Soc
   return (
     <ul className={className} aria-label="Social Media Accounts">
         {data.map((item: SocialsItem, index: number) => (
-          <li key={index}>
+          <li key={index} className="hover:text-primary-text">
             <a href={item.link} title={item.title} aria-label={item.title + " button"}>
               {item.icon === "Github" ? <Github className="w-[18px] h-[18px]"/> 
               : item.icon === "Linkedin" ? <Linkedin className="w-[18px] h-[18px]"/> 
