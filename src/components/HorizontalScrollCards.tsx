@@ -1,6 +1,6 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import ProjectCard from "./ProjectCard";
+import ReferenceCards from "./ReferenceCard";
 
 export default function HorizontalScrollCards({data}: {data: any}) {
   const targetRef = useRef(null);
@@ -8,7 +8,7 @@ export default function HorizontalScrollCards({data}: {data: any}) {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-93%"]);
 
   const cards = data.items.map((item:string[], index: number)=> {
     return(
@@ -20,7 +20,7 @@ export default function HorizontalScrollCards({data}: {data: any}) {
       className='w-full md:w-fit h-fit'
       key={index}
     >
-      <ProjectCard data={item} isResponsive={false} />
+      <ReferenceCards data={item}/>
     </motion.div>
   )
   })

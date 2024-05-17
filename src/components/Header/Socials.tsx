@@ -1,4 +1,5 @@
 import { Donate, Github, Instagram, Link, Linkedin } from "iconoir-react"
+import { Mail, Phone } from "lucide-react";
 
 type SocialsItem = {
   title: string;
@@ -7,7 +8,7 @@ type SocialsItem = {
 };
 type SocialsProps = SocialsItem[];
 
-export default function Socials({className, data}: {className: string, data: SocialsProps}) {
+export default function Socials({className, data}: {className?: string, data: SocialsProps}) {
   return (
     <ul className={className} aria-label="Social Media Accounts">
         {data.map((item: SocialsItem, index: number) => (
@@ -17,6 +18,8 @@ export default function Socials({className, data}: {className: string, data: Soc
               : item.icon === "Linkedin" ? <Linkedin className="w-[18px] h-[18px]"/> 
               : item.icon === "Instagram" ? <Instagram className="w-[18px] h-[18px]"/> 
               : item.icon === "Buymeacoffee" ? <Donate className="w-[19px] h-[19px]" />
+              : item.icon === "Phone" ? <Phone className="w-[18px] h-[18px]"/>
+              : item.icon === "Mail" ? <Mail className="w-[18px] h-[18px]" />
               : <Link className="w-[18px] h-[18px]"/>}
             </a>
           </li>

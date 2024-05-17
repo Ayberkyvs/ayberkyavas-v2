@@ -29,6 +29,13 @@ import Pixlre from "../assets/appstack/pixlre.webp"
 import Powertoys from "../assets/appstack/powertoys.webp"
 import Steam from "../assets/appstack/steam.webp"
 
+// References 
+
+import BurakErarslan from "../assets/references/burakerarslan.webp"
+import DoganIsleyen from "../assets/references/doganisleyen.webp"
+import ErtugrulAksel from "../assets/references/ertugrulaksel.webp"
+import MuratAlbuz from "../assets/references/muratalbuz.webp"
+
 export const data = {
     en: {
         header: {
@@ -84,8 +91,8 @@ export const data = {
             items: [
                 {
                     id: 4,
-                    badgeType: "yellow",
-                    badgeText: "Now",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: Horizon,
                     title: "Teknofest Rocket Competition",
                     company: "Horizon Rocket",
@@ -230,8 +237,8 @@ export const data = {
                 },
                 {
                     id: 4,
-                    badgeType: "yellow",
-                    badgeText: "Now",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: Horizon,
                     title: "Teknofest Rocket Competition",
                     company: "Horizon Rocket",
@@ -278,6 +285,93 @@ export const data = {
                     paragraph: "The website is my first corporate work for Pinyin Marine' company.",
                     link: "/projects/8"
                 }
+            ]
+        },
+        references: {
+            title: "References",
+            items: [
+                {
+                    image: BurakErarslan,
+                    title: "Burak Erarslan",
+                    company: "Co-Founder at Pinyin Marine",
+                    paragraph: "He has developed himself in web services and has a strong communication skills",
+                    socials: [
+                        {
+                            title: "Burak Erarslan Phone Number",
+                            link: "tel:05373442566",
+                            icon: "Phone",
+                        },
+                        {
+                            title: "Burak Erarslan Email",
+                            link: "mailto:burak.erarslan@pinyin-marine.com",
+                            icon: "Mail",
+                        },
+                        {
+                            title: "Burak Erarslan Linkedin",
+                            link: "https://www.linkedin.com/in/burak-erarslan/",
+                            icon: "Linkedin",
+                        },
+                    ],
+                },
+                {
+                    image: DoganIsleyen,
+                    title: "Doğan İşleyen",
+                    company: "GM at Efor Fair",
+                    paragraph: "He is a very ambitious and determined person, there is nothing he cannot do in the job he loves",
+                    socials: [
+                        {
+                            title: "Doğan İşleyen Phone Number",
+                            link: "tel:+905336874545",
+                            icon: "Phone",
+                        },
+                    ],
+                },
+                {
+                    image: ErtugrulAksel,
+                    title: "Ertuğrul Aksel",
+                    company: "Founder at Serapore Machines",
+                    paragraph: "Thanks to Ayberk’s innovative policies, development-oriented efforts, and time-saving solutions, our company has gained a significant market position since its inception. I extend my gratitude to them",
+                    socials: [
+                        {
+                            title: "Ertuğrul Aksel Phone Number",
+                            link: "tel:+905324214816",
+                            icon: "Phone",
+                        },
+                        {
+                            title: "Ertuğrul Aksel Email",
+                            link: "mailto:ertugrul@serapore.com.tr",
+                            icon: "Mail",
+                        },
+                        {
+                            title: "Ertuğrul Aksel Linkedin",
+                            link: "https://www.linkedin.com/in/ertugrul-aksel-18445969/",
+                            icon: "Linkedin",
+                        },
+                    ],
+                },
+                {
+                    image: MuratAlbuz,
+                    title: "Murat Albuz",
+                    company: "Plant Manager at Newarc",
+                    paragraph: "Kudos to Ayberk for driving our frontend development with creativity and efficiency. Their solutions have made a real impact!",
+                    socials: [
+                        {
+                            title: "Murat Albuz Phone Number",
+                            link: "tel:+905056814460",
+                            icon: "Phone",
+                        },
+                        {
+                            title: "Murat Albuz Email",
+                            link: "mailto:murat@serapore.com.tr",
+                            icon: "Mail",
+                        },
+                        {
+                            title: "Murat Albuz Linkedin",
+                            link: "https://www.linkedin.com/in/murat-albuz-20372b57/",
+                            icon: "Linkedin",
+                        },
+                    ],
+                },
             ]
         },
         appstack: [
