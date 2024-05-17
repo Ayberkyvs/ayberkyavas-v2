@@ -1,6 +1,5 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
-import ProjectCard from "./ProjectCard";
 import ReferenceCards from "./ReferenceCard";
 
 export default function HorizontalScrollCards({data}: {data: any}) {

@@ -1,7 +1,6 @@
 import { DataContext } from "@/App"
 import { lazy, useContext } from "react"
 import { Pin } from "iconoir-react";
-import ReferenceCards from "@/components/ReferenceCard";
 const Hero = lazy(()=> import("@/components/Hero/Hero"));
 const ProjectCards = lazy(()=> import("@/components/ProjectCards"));
 const HorizontalScrollCards = lazy(()=> import("@/components/HorizontalScrollCards"));
