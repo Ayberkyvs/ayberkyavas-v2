@@ -5,7 +5,7 @@ import { easeInOut, motion } from "framer-motion";
 export default function Loader() {
     const data = useContext(DataContext).en.hero        
   return (
-    <section className="flex flex-col justify-center items-center w-screen h-screen overflow-hidden">
+    <section className="flex flex-col justify-center items-center w-screen h-screen overflow-hidden bg-black">
         <motion.img 
           initial={{scale: 1, rotateZ: 0}}
           animate={{scale: [0, 1, 0], rotateZ: [90, 180, 360]}}
