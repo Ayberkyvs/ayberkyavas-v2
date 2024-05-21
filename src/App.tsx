@@ -1,25 +1,25 @@
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider } from "@/components/theme-provider";
 import {
-  createBrowserRouter,
+  createHashRouter, // HashRouter'ı ekleyin
   Outlet,
   RouterProvider,
 } from "react-router-dom";
 import MainLayout from './layout/MainLayout';
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import { createContext } from 'react';
 import { data } from './data/data';
 import Projects from './pages/Projects';
 import ProjectDetail, { loader } from './pages/ProjectDetail';
-import "./server"
+import "./server";
 import AppStack from './pages/AppStack';
 // import Loader from './pages/Loader';
 import NotFound from './pages/NotFound';
 
-export const DataContext = createContext(data)
+export const DataContext = createContext(data);
 
 export default function App() {
   // const [loading, setLoading] = useState(true)
-  const router = createBrowserRouter([
+  const router = createHashRouter([ // HashRouter kullanın
     {
       path: "/",
       element: <MainLayout />,
@@ -70,6 +70,5 @@ export default function App() {
         </ThemeProvider>
       </DataContext.Provider>
     </>
-  )
+  );
 }
-
