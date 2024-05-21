@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import {
   createHashRouter,
+  Navigate,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
@@ -47,10 +48,14 @@ export default function App() {
           element: <AppStack />,
         },
         {
-          path: "*",
-          element: <NotFound />
+          path: '/404',
+          element: <NotFound />,
         },
       ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/404" replace/>,
     },
   ]);
   return (
@@ -58,7 +63,7 @@ export default function App() {
       <Suspense fallback={<Loader/>}>
         <DataContext.Provider value={data}>  
           <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-            <RouterProvider router={router} />
+            <RouterProvider router={router} future={{ v7_startTransition: true }}/>
           </ThemeProvider>
         </DataContext.Provider>
       </Suspense>
