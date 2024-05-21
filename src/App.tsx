@@ -15,6 +15,7 @@ import "./server";
 import AppStack from './pages/AppStack';
 import Loader from './pages/Loader';
 import NotFound from './pages/NotFound';
+import ErrorBoundary from "./components/ErrorBoundary";
 
 export const DataContext = createContext(data);
 
@@ -23,6 +24,7 @@ export default function App() {
     {
       path: "/",
       element: <MainLayout />,
+      errorElement: <ErrorBoundary />,
       children: [
         {
           path: "/",
