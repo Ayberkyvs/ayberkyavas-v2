@@ -30,18 +30,19 @@
     </IfModule>
 </IfModule>
 
-# Varsayılan karakter setini UTF-8 olarak ayarlar.
-AddDefaultCharset utf-8
-
-# Belirli dosya uzantıları için UTF-8 karakter setini kullanır.
-AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
-
-# RewriteEngine'ı aktifleştirir.
-RewriteEngine On
-
 # WebP görüntüler için HTTP_ACCEPT kontrolü yapar.
 RewriteCond %{HTTP_ACCEPT} image/webp
 
 # Eğer istenen WebP dosyası varsa, onu sunar.
 RewriteCond %{DOCUMENT_ROOT}/$1.webp -f
 RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /subdirectory
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+</IfModule>
