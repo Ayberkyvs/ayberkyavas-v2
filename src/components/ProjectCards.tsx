@@ -50,4 +50,3 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
     </section>
   )
 }
-
