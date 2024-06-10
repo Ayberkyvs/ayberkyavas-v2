@@ -141,6 +141,7 @@ export const data = {
                 //     paragraph: "A professional certification I'm working on",
                 // },
                 {
+                    id: 9,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
@@ -149,6 +150,27 @@ export const data = {
                     paragraph: "A Frontend Course with extensive content that I am working on",
                 },
                 {
+                    id: 8,
+                    badgeType: "green",
+                    badgeText: "completed",
+                    image: Meta,
+                    title: "Advanced React",
+                    company: "Meta",
+                    paragraph: "I have completed Meta’s 26-hour Advanced React course.",
+                    link: "https://coursera.org/share/d36a00b6c93a6f54ceafcd33a86895ae",
+                },
+                {
+                    id: 7,
+                    badgeType: "green",
+                    badgeText: "completed",
+                    image: Meta,
+                    title: "React Basics",
+                    company: "Meta",
+                    paragraph: "I have completed Meta’s 26-hour React Basics course.",
+                    link: "https://coursera.org/share/0f188e8d2126c36e6eab8f8eaec43e00",
+                },
+                {
+                    id: 6,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Meta,
@@ -158,6 +180,7 @@ export const data = {
                     link: "https://coursera.org/share/5a302cea4079eff8fe242141706256dc",
                 },
                 {
+                    id: 5,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Meta,
@@ -167,6 +190,7 @@ export const data = {
                     link: "https://coursera.org/share/ab82b952a8e859f2f7bf40bf894632c7",
                 },
                 {
+                    id: 4,
                     badgeType: "green",
                     badgeText: "completed",
                     image: FreeCodeCamp,
@@ -176,6 +200,7 @@ export const data = {
                     link: "https://www.freecodecamp.org/certification/ayberksch/responsive-web-design",
                 },
                 {
+                    id: 3,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Scrimba,
@@ -185,6 +210,7 @@ export const data = {
                     link: "https://scrimba.com/certificate/uvvkNNUx/greact"
                 },
                 {
+                    id: 2,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Turkcell,
@@ -194,6 +220,7 @@ export const data = {
                     link: "https://gelecegiyazanlar.turkcell.com.tr/certificate/dWlkMzEzNTI2Y2lkNDcxOTZxaWQxNTRlbmQ="
                 },
                 {
+                    id: 1,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Izmirekonomi,
@@ -207,7 +234,7 @@ export const data = {
             title: "projects & works",
             items: [
                 {
-                    id: 1,
+                    id: 8,
                     badgeType: "pink",
                     badgeText: "Update",
                     image: PortfolioWebsiteLogo,
@@ -217,7 +244,7 @@ export const data = {
                     link: `/projects/1`,
                 },
                 {
-                    id: 2,
+                    id: 7,
                     badgeType: "red",
                     badgeText: "PAUSED",
                     image: NotWhatsapp,
@@ -226,7 +253,7 @@ export const data = {
                     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
                 },
                 {
-                    id: 3,
+                    id: 6,
                     badgeType: "red",
                     badgeText: "PAUSED",
                     image: Password,
@@ -236,7 +263,7 @@ export const data = {
                     link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
                 },
                 {
-                    id: 4,
+                    id: 5,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Horizon,
@@ -246,7 +273,7 @@ export const data = {
                     link: "/projects/4"
                 },
                 {
-                    id: 5,
+                    id: 4,
                     badgeType: "green",
                     badgeText: "Completed",
                     image: Parkpin,
@@ -256,7 +283,7 @@ export const data = {
                     link: "https://github.com/LoyalEnv0y/ParkPin-V2"
                 },
                 {
-                    id: 6,
+                    id: 3,
                     badgeType: "green",
                     badgeText: "Completed",
                     image: Izmirekonomi,
@@ -266,7 +293,7 @@ export const data = {
                     link: "/projects/6"
                 },
                 {
-                    id: 7,
+                    id: 2,
                     badgeType: "green",
                     badgeText: "Completed",
                     image: Digime,
@@ -276,7 +303,7 @@ export const data = {
                     link: "https://digime3d.com/"
                 },
                 {
-                    id: 8,
+                    id: 1,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Pinyin,

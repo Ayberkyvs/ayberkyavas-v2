@@ -8,6 +8,7 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
   const [loadedCount, setLoadedCount] = useState(0);
   const ProjectCards = data.items.map((item: string[], index: number)=> {
     return(
+    //! Change key to unique another
     <motion.div 
       initial={{opacity: 0, y: -20}}
       whileInView={{opacity: 1, y: 0}}
