@@ -141,7 +141,7 @@ export const data = {
                 //     paragraph: "A professional certification I'm working on",
                 // },
                 {
-                    id: 9,
+                    id: 10,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
@@ -150,7 +150,7 @@ export const data = {
                     paragraph: "A Frontend Course with extensive content that I am working on",
                 },
                 {
-                    id: 8,
+                    id: 9,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Meta,
@@ -158,6 +158,16 @@ export const data = {
                     company: "Meta",
                     paragraph: "I have completed Meta’s 26-hour Advanced React course.",
                     link: "https://coursera.org/share/d36a00b6c93a6f54ceafcd33a86895ae",
+                },
+                {
+                    id: 8,
+                    badgeType: "retro",
+                    badgeText: "completed",
+                    image: Izmirekonomi,
+                    title: "Certificate of Honor",
+                    company: "Izmir University of Economics",
+                    paragraph: "I have been entitled to receive a certificate of honor with a GPA of 3.31 for the 2022-2023 academic year.",
+                    link: "https://www.linkedin.com/feed/update/urn:li:activity:7202226149542760449/",
                 },
                 {
                     id: 7,
