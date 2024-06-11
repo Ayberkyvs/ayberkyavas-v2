@@ -1,7 +1,7 @@
-import { Link as RouterLink} from "react-router-dom"
-import BadgeElement from "./BadgeElement"
-import { Link } from "iconoir-react"
+import { Link as RouterLink} from "react-router-dom";
+import BadgeElement from "./BadgeElement";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Award, Link } from "lucide-react";
 
 export default function ProjectCard({ data, isResponsive = true }: { data: any, isResponsive?: boolean}) {
   return (
@@ -13,7 +13,7 @@ export default function ProjectCard({ data, isResponsive = true }: { data: any, 
           <LazyLoadImage src={data.image} alt={data.company + " logo"} className="w-full h-full rounded-xl" draggable={false} />
         </div>
         <div className={`flex flex-col w-fit h-fit`}>
-            <h3 className="inline justify-start items-center text-base font-bold mr-2">{data.title} {data.link ? <Link className="inline text-link-blue"/>: ""}</h3>
+            <h3 className="inline justify-start items-center text-base font-bold mr-2">{data.title} {data?.link && data?.type === "work" ? <Link className="inline text-link-blue w-5 h-5"/> : data?.link && data?.type === "certificate" ? <Award className="inline text-link-blue w-5 h-5" /> : ""}</h3>
             <p className="text-[13px] text-light-gray leading-[1.5em]">{data.company}</p>
             <p className="text-sm text-primary-text-60 leading-[1.5em]">{data.paragraph}</p>
         </div>

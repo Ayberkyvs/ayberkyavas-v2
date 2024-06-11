@@ -13,6 +13,12 @@ export default function ScrollingList({data}: {data: []}){
           {generateSkillSpans(data)}
         </ul>
       </div>
+      <div className="scroller w-screen max-w-[768px]" data-speed="fast" data-animated="true" data-direction="left">
+        <ul className="tag-list scroller__inner">
+          {generateSkillSpans(data)}
+          {generateSkillSpans(data)}
+        </ul>
+      </div>
     </div>
   );
 };

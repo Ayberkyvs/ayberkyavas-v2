@@ -1,5 +1,5 @@
 import { Separator } from "@radix-ui/react-separator";
-import { CoffeeCup, Github, Link, Linkedin, Mail } from "iconoir-react";
+import { Coffee, Github, Link, Linkedin, Mail } from "lucide-react";
 import { redirect, useLoaderData, LoaderFunction, Navigate } from "react-router-dom";
 
 export const loader: LoaderFunction = async ({ params }) => {
@@ -60,7 +60,7 @@ export default function ProjectDetail() {
                     <a href={item.link} key={index}>{item.icon === "link" ? <Link /> 
                     : item.icon === "github" ? <Github /> 
                     : item.icon === "linkedin" ? <Linkedin />
-                    : item.icon === "buymeacoffe" ? <CoffeeCup /> 
+                    : item.icon === "buymeacoffe" ? <Coffee /> 
                     : item.icon === "email" ? <Mail />
                     : <Link />}
                     </a>

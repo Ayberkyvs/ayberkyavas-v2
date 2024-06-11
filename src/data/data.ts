@@ -97,7 +97,8 @@ export const data = {
                     title: "Teknofest Rocket Competition",
                     company: "Horizon Rocket",
                     paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
-                    link: "/projects/4"
+                    link: "/projects/4",
+                    type: "work"
                 },
                 {
                     id: 6,
@@ -107,7 +108,8 @@ export const data = {
                     title: "Gameathon Admin Panel",
                     company: "Izmir University of Economics",
                     paragraph: "I have independently developed a registration website and an admin panel for the IEU Game Development Event.",
-                    link: "/projects/6"
+                    link: "/projects/6",
+                    type: "work"
                 },
                 {
                     id: 5,
@@ -117,7 +119,8 @@ export const data = {
                     title: "Parkpin Smart Car Park",
                     company: "Ayberk & Çetin",
                     paragraph: "Parkpin Smart Parking is an application that allows users to view all parking lots on a map, obtain information about the parking lots, reserve a spot, and make online payments.",
-                    link: "https://github.com/LoyalEnv0y/ParkPin-V2"
+                    link: "https://github.com/LoyalEnv0y/ParkPin-V2",
+                    type: "work"
                 },
             ]
         },
@@ -148,6 +151,7 @@ export const data = {
                     title: "The Front-End Developer",
                     company: "Scrimba",
                     paragraph: "A Frontend Course with extensive content that I am working on",
+                    type: "certificate"
                 },
                 {
                     id: 8,
@@ -158,6 +162,7 @@ export const data = {
                     company: "Meta",
                     paragraph: "I have completed Meta’s 26-hour Advanced React course.",
                     link: "https://coursera.org/share/d36a00b6c93a6f54ceafcd33a86895ae",
+                    type: "certificate"
                 },
                 {
                     id: 7,
@@ -168,6 +173,7 @@ export const data = {
                     company: "Meta",
                     paragraph: "I have completed Meta’s 26-hour React Basics course.",
                     link: "https://coursera.org/share/0f188e8d2126c36e6eab8f8eaec43e00",
+                    type: "certificate"
                 },
                 {
                     id: 6,
@@ -178,6 +184,7 @@ export const data = {
                     company: "Meta",
                     paragraph: "I have completed Meta’s 13-hour Version Control course. I learned detailed information about Bash, Git, Github.",
                     link: "https://coursera.org/share/5a302cea4079eff8fe242141706256dc",
+                    type: "certificate"
                 },
                 {
                     id: 5,
@@ -188,6 +195,7 @@ export const data = {
                     company: "Meta",
                     paragraph: "I have completed Meta’s 42-hour JavaScript course. I earned a certificate with a success rate of 97.73%.",
                     link: "https://coursera.org/share/ab82b952a8e859f2f7bf40bf894632c7",
+                    type: "certificate"
                 },
                 {
                     id: 4,
@@ -198,6 +206,7 @@ export const data = {
                     company: "freeCodeCamp",
                     paragraph: "I have successfully completed 300 hours of HTML and CSS training.",
                     link: "https://www.freecodecamp.org/certification/ayberksch/responsive-web-design",
+                    type: "certificate"
                 },
                 {
                     id: 3,
@@ -207,7 +216,8 @@ export const data = {
                     title: "Advanced React",
                     company: "Scrimba",
                     paragraph: "I successfully graduating from Advanced React",
-                    link: "https://scrimba.com/certificate/uvvkNNUx/greact"
+                    link: "https://scrimba.com/certificate/uvvkNNUx/greact",
+                    type: "certificate"
                 },
                 {
                     id: 2,
@@ -217,7 +227,8 @@ export const data = {
                     title: "React Development",
                     company: "Turkcell",
                     paragraph: "I am happy to share the four certifications I have completed.",
-                    link: "https://gelecegiyazanlar.turkcell.com.tr/certificate/dWlkMzEzNTI2Y2lkNDcxOTZxaWQxNTRlbmQ="
+                    link: "https://gelecegiyazanlar.turkcell.com.tr/certificate/dWlkMzEzNTI2Y2lkNDcxOTZxaWQxNTRlbmQ=",
+                    type: "certificate"
                 },
                 {
                     id: 1,
@@ -227,6 +238,7 @@ export const data = {
                     title: "Computer Programming",
                     company: "Izmir University of Economics",
                     paragraph: "The certificate I will receive after completing my education at Izmir University of Economics",
+                    type: "certificate"
                 },
             ]
         },
@@ -242,6 +254,7 @@ export const data = {
                     company: "Ayberk Yavaş",
                     paragraph: "I am developing my portfolio website. (you are currently using)",
                     link: `/projects/1`,
+                    type: "work"
                 },
                 {
                     id: 7,
@@ -251,6 +264,7 @@ export const data = {
                     title: "NotWhatsapp",
                     company: "Ayberk Yavaş",
                     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
+                    type: "work"
                 },
                 {
                     id: 6,
@@ -261,6 +275,7 @@ export const data = {
                     company: "Ayberk Yavaş",
                     paragraph: "Never use an insecure password again",
                     link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
+                    type: "work"
                 },
                 {
                     id: 5,
@@ -270,7 +285,8 @@ export const data = {
                     title: "Teknofest Rocket Competition",
                     company: "Horizon Rocket",
                     paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
-                    link: "/projects/4"
+                    link: "/projects/4",
+                    type: "work"
                 },
                 {
                     id: 4,
@@ -280,7 +296,8 @@ export const data = {
                     title: "Parkpin Smart Car Park",
                     company: "Ayberk & Çetin",
                     paragraph: "Parkpin Smart Parking is an application that allows users to view all parking lots on a map, obtain information about the parking lots, reserve a spot, and make online payments.",
-                    link: "https://github.com/LoyalEnv0y/ParkPin-V2"
+                    link: "https://github.com/LoyalEnv0y/ParkPin-V2",
+                    type: "work"
                 },
                 {
                     id: 3,
@@ -290,7 +307,8 @@ export const data = {
                     title: "Gameathon Admin Panel",
                     company: "Izmir University of Economics",
                     paragraph: "I have independently developed a registration website and an admin panel for the IEU Game Development Event.",
-                    link: "/projects/6"
+                    link: "/projects/6",
+                    type: "work"
                 },
                 {
                     id: 2,
@@ -300,7 +318,8 @@ export const data = {
                     title: "Frontend Internship",
                     company: "DigiME 3D",
                     paragraph: "I Have been working on a web application and solidified my JavaScript skills.",
-                    link: "https://digime3d.com/"
+                    link: "https://digime3d.com/",
+                    type: "work"
                 },
                 {
                     id: 1,
@@ -310,7 +329,8 @@ export const data = {
                     title: "Pinyin Marine",
                     company: "Pinyin Marine",
                     paragraph: "The website is my first corporate work for Pinyin Marine' company.",
-                    link: "/projects/8"
+                    link: "/projects/8",
+                    type: "work"
                 }
             ]
         },
