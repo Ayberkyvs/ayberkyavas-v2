@@ -1,4 +1,4 @@
-import { Mail } from "iconoir-react";
+import { Mail } from "lucide-react";
 import MessageBubble from "../../assets/sayhi.webp"
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";

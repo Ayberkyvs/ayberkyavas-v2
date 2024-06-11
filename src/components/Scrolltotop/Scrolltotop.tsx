@@ -1,4 +1,4 @@
-import { Rocket } from "iconoir-react";
+import { Rabbit } from "lucide-react";
 import { Button } from "../ui/button";
 import { easeInOut, motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -38,7 +38,7 @@ export default function Scrolltotop() {
                 ease: easeInOut,
             }}
             >
-                <Rocket className="text-[20px]"/>
+                <Rabbit className="w-8 h-8"/>
             </motion.span>
         </Button>
         }
