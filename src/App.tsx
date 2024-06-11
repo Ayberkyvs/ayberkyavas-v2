@@ -5,17 +5,18 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import MainLayout from './layout/MainLayout';
-import Home from "./pages/Home";
-import { createContext, Suspense } from 'react';
+import { createContext, lazy, Suspense } from 'react';
 import { data } from './data/data';
-import Projects from './pages/Projects';
-import ProjectDetail, { loader } from './pages/ProjectDetail';
 import "./server";
-import AppStack from './pages/AppStack';
-import Loader from './pages/Loader';
-import NotFound from './pages/NotFound';
-import ErrorBoundary from "./components/ErrorBoundary";
+import { loader } from "@/pages/ProjectDetail";
+const Home = lazy(()=> import("@/pages/Home"));
+const MainLayout = lazy(()=> import("@/layout/MainLayout"));
+const Projects = lazy(()=> import("@/pages/Projects"));
+const ProjectDetail = lazy(()=> import("@/pages/ProjectDetail"));
+const AppStack = lazy(()=> import("@/pages/AppStack"));
+const Loader = lazy(()=> import("@/pages/Loader"));
+const NotFound = lazy(()=> import("@/pages/NotFound"));
+const ErrorBoundary = lazy(()=> import("@/components/ErrorBoundary"));
 
 export const DataContext = createContext(data);
 

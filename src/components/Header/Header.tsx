@@ -4,7 +4,7 @@ import Socials from "./Socials"
 import { ModeToggle } from "../mode-toggle"
 import { useContext, useState } from "react"
 import { DataContext } from "@/App"
-import { Menu, Xmark } from "iconoir-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom"
 
 export default function Header() {
@@ -21,11 +21,11 @@ export default function Header() {
               <Navbar data={headerData.navbar}/>
               </div>
             </div>
-            <div className="flex items-center gap-[12px]">
+            <div className="flex items-center gap-3">
               <Socials data={headerData.socials} className="flex gap-[16px] w-fit h-fit text-black dark:text-white z-[3]"/>
               <Separator orientation="vertical" className="border-black/50 dark:border-white/50 border-[0.5px] h-[18px] w-fit z-[3]"/>
               <ModeToggle className=" w-[18px] h-[18px] text-black dark:text-white z-[3]"/>
-              <button className="flex md:hidden justify-center items-center text-primary-text z-[3] w-[18px] h-[18px]" onClick={()=> setIsOpen(prevState => !prevState)} role="button" aria-label="menu button">{isOpen ? <Xmark /> : <Menu />}</button>
+              <button className="flex md:hidden justify-center items-center text-primary-text z-[3] w-[18px] h-[18px]" onClick={()=> setIsOpen(prevState => !prevState)} role="button" aria-label="menu button">{isOpen ? <X /> : <Menu />}</button>
             </div>
         </div>
         {isOpen &&

@@ -13,7 +13,7 @@ export default function ReferenceCards({ data, isResponsive = false }: { data: a
          <LazyLoadImage src={data.image} alt={data.company + " logo"} className="w-full h-full rounded-xl object-cover" draggable={false} />
        </div>
        <div className={`flex flex-col w-fit h-fit`}>
-           <h3 className="inline-flex justify-start items-center text-base font-bold mr-2">{data.title} <BadgeCheck className="ml-1 inline text-link-blue w-[18px] h-[18px]"/></h3>
+           <h3 className="inline-flex justify-start items-center text-base font-bold mr-2">{data.title} <BadgeCheck className="ml-1 inline text-link-blue w-5 h-5"/></h3>
            <p className="text-[13px] text-light-gray leading-[1.5em]">{data.company}</p>
            <p className="text-sm text-primary-text-60 leading-[1.5em]">{data.paragraph}</p>
            <Socials className="flex gap-3 mt-3" data={data.socials}/>

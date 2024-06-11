@@ -1,6 +1,5 @@
-import { BadgeCheck } from "iconoir-react";
 import ScrollingList from "@/components/ScrollingList";
-import { DownloadCloudIcon } from "lucide-react";
+import { FileText, BadgeCheck } from "lucide-react";
 
 export default function Hero({data}: {data: any}) {
   return (
@@ -13,9 +12,9 @@ export default function Hero({data}: {data: any}) {
                 <p className="text-light-gray text-base font-semibold leading-6">{data.subtitle}</p>
             </div>
         </div>
-        <p className="w-full h-fit leading-6 font-normal text-primary-text text-base md:text-xl mt-[18px]">Experienced <strong>Front-End Developer</strong> with proficiency in JavaScript, TypeScript, React, and databases, skilled in creating innovative web designs and efficiently resolving complex code issues.</p>
+        <p className="w-full h-fit leading-6 font-normal text-primary-text text-base md:text-lg mt-[18px]">Experienced <strong>Front-End Developer</strong> with proficiency in JavaScript, TypeScript, React, and databases, skilled in creating innovative web designs and efficiently resolving complex code issues.</p>
         <p className="text-light-gray mt-[8px] leading-6 text-base md:text-lg font-medium">{data.quota} <span className="font-semibold text-transparent bg-blue bg-gradient-to-r from-current to-pink bg-clip-text">{data.company}</span></p>
-        <a href={data.resume} download={true} className="flex justify-center items-center mt-[16px] gradient-retro text-white py-1 rounded-full mb-[18px] text-sm w-full">Download Resume <DownloadCloudIcon className="ml-2 text-sm"/></a>
+        <a href={data.resume} download={true} className="flex justify-center items-center mt-[16px] gradient-retro text-white py-1.5 rounded-xl mb-[18px] text-sm w-full">Download Resume <FileText className="ml-2 text-sm w-5 h-5"/></a>
         <div className="w-screen overflow-hidden flex md:block">
           <ScrollingList data={data.skills}/>
         </div>
