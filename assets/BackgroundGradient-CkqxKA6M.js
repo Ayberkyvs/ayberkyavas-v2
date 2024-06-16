@@ -1,0 +1,1 @@
+import{j as i,n as t}from"./index-Bv0Y1BS5.js";function o({variant:a}){return i.jsx(t.div,{className:`${a==="header"?"gradient-top":"gradient-bottom"} w-full md:max-w-[1440px] h-[659px] overflow-hidden`,draggable:!1,initial:{opacity:0},whileInView:{opacity:1},transition:{duration:.5},"aria-disabled":"true"})}export{o as default};

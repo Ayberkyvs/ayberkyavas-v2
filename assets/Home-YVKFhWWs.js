@@ -1,0 +1,7 @@
+const __vite__fileDeps=["assets/Hero-DJsEOLRH.js","assets/index-Bv0Y1BS5.js","assets/index-Bk_XbCYf.css","assets/badge-check-CvC4mfis.js","assets/HorizontalScrollCards-Cr7hTMHD.js","assets/Socials-CoMVuaWN.js"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
+import{c as r,r as e,D as i,j as a,_ as s}from"./index-Bv0Y1BS5.js";/**
+ * @license lucide-react v0.358.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const n=r("Pin",[["line",{x1:"12",x2:"12",y1:"17",y2:"22",key:"1jrz49"}],["path",{d:"M5 17h14v-1.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V6h1a2 2 0 0 0 0-4H8a2 2 0 0 0 0 4h1v4.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24Z",key:"13yl11"}]]),_=e.lazy(()=>s(()=>import("./Hero-DJsEOLRH.js"),__vite__mapDeps([0,1,2,3]))),o=e.lazy(()=>s(()=>import("./index-Bv0Y1BS5.js").then(t=>t.U),__vite__mapDeps([1,2]))),c=e.lazy(()=>s(()=>import("./HorizontalScrollCards-Cr7hTMHD.js"),__vite__mapDeps([4,1,2,5,3]))),d=e.lazy(()=>s(()=>import("./index-Bv0Y1BS5.js").then(t=>t.V),__vite__mapDeps([1,2])));function x(){const t=e.useContext(i).en;return a.jsxs("div",{className:"w-full h-fit pt-[136px] md:pt-[126px]",children:[a.jsx(_,{data:t.hero}),a.jsx(o,{data:t.featured,icon:a.jsx(n,{className:"w-5 h-5"})}),a.jsx(o,{data:t.certificates}),a.jsx(o,{data:t.works}),a.jsx(c,{data:t.references}),a.jsx(d,{})]})}export{x as default};
