@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /assets/*ayberk_resume*.pdf$
 Disallow: /assets/
 Sitemap: https:/www.ayberkyavas.com/sitemap.xml
