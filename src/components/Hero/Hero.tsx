@@ -4,8 +4,7 @@ import { FileText, BadgeCheck } from "lucide-react";
 export default function Hero({data}: {data: any}) {
   return (
     <section className="w-full h-fit overflow-hidden">
-        <div 
-        className="flex items-center gap-[16px] w-fit h-[102px] ">
+        <div className="flex items-center gap-[16px] w-fit h-[102px] ">
             <img src={data.image} alt="Ayberk Memoji" className="w-[84px] h-[84px] bg-link-blue rounded-full" draggable={false}/>
             <div>
                 <h1 className="flex items-center justify-center gap-2 heading-1 mb-[4px] whitespace-nowrap font-semibold">{data.title}  <BadgeCheck className="text-link-blue w-[24px] h-[24px]"/></h1>

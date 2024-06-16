@@ -17,6 +17,7 @@ import Horizon from "../assets/works/HorizonRocket/horizon.webp"
 import Password from "../assets/works/password.webp"
 import NotWhatsapp from "../assets/works/notwhatsapp.webp"
 import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.webp"
+import Reform from "../assets/works/ReformMarine/reformmarine.webp"
 
 import Figma from "../assets/appstack/figma.webp"
 import Spotify from "../assets/appstack/spotify.webp"
@@ -44,6 +45,10 @@ export const data = {
                 {
                     text: "stack",
                     link: "appstack",
+                },
+                {
+                    text: "certificates",
+                    link: "certificates",
                 },
                 {
                     text: "projects",
@@ -144,12 +149,22 @@ export const data = {
                 //     paragraph: "A professional certification I'm working on",
                 // },
                 {
-                    id: 9,
+                    id: 10,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
                     title: "The Front-End Developer",
                     company: "Scrimba",
+                    paragraph: "A Frontend Course with extensive content that I am working on",
+                    type: "certificate"
+                },
+                {
+                    id: 9,
+                    badgeType: "yellow",
+                    badgeText: "now",
+                    image: Meta,
+                    title: "Meta Front-End Professional",
+                    company: "Meta",
                     paragraph: "A Frontend Course with extensive content that I am working on",
                     type: "certificate"
                 },
@@ -245,6 +260,16 @@ export const data = {
         works: {
             title: "projects & works",
             items: [
+                {
+                    id: 9,
+                    badgeType: "yellow",
+                    badgeText: "Now",
+                    image: Reform,
+                    title: "Business Website",
+                    company: "Reform Marine",
+                    paragraph: "Reform Marine provides cargo ship service and parts.",
+                    type: "work"
+                },
                 {
                     id: 8,
                     badgeType: "pink",

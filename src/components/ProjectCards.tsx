@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 import { motion } from "framer-motion";
 import { ChevronDown } from 'lucide-react';
 
-export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
+export default function ProjectCards({data, icon, showAll = false}: {data: any, icon?: any, showAll?: boolean}) {
   const [renderCards, setRenderCards] = useState<any[]>([])
   const [loadedCount, setLoadedCount] = useState(0);
   const ProjectCards = data.items.map((item: string[], index: number)=> {
@@ -28,7 +28,7 @@ export default function ProjectCards({data, icon}: {data: any, icon?: any}) {
   const loadMore = ()=> {
     let newCards = [];
     const startIndex = loadedCount;
-    const endIndex = loadedCount + 3;
+    const endIndex = showAll ? ProjectCards.length : loadedCount + 3;
     for(let i = startIndex; i < endIndex; i++){
       if (ProjectCards[i]){
         newCards.push(ProjectCards[i]);

@@ -9,6 +9,7 @@ import { createContext, lazy, Suspense } from 'react';
 import { data } from './data/data';
 import "./server";
 import { loader } from "@/pages/ProjectDetail";
+import Certificates from "./pages/Certificates";
 const Home = lazy(()=> import("@/pages/Home"));
 const MainLayout = lazy(()=> import("@/layout/MainLayout"));
 const Projects = lazy(()=> import("@/pages/Projects"));
@@ -30,6 +31,10 @@ export default function App() {
         {
           path: "/",
           element: <Home />,
+        },
+        {
+          path: "/certificates",
+          element: <Certificates />
         },
         {
           path: '/projects',
