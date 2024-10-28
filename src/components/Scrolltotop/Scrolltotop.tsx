@@ -1,5 +1,4 @@
 import { Rabbit } from "lucide-react";
-import { Button } from "../ui/button";
 import { easeInOut, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
