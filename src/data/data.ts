@@ -262,8 +262,8 @@ export const data = {
             items: [
                 {
                     id: 9,
-                    badgeType: "yellow",
-                    badgeText: "Now",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: Reform,
                     title: "Business Website",
                     company: "Reform Marine",
@@ -272,8 +272,8 @@ export const data = {
                 },
                 {
                     id: 8,
-                    badgeType: "pink",
-                    badgeText: "Update",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: PortfolioWebsiteLogo,
                     title: "Portfolio Website",
                     company: "Ayberk Yavaş",
