@@ -46,7 +46,7 @@ export default function ProjectCards({data, icon, showAll = false}: {data: any, 
           {renderCards}
         </div>
         <div className='flex justify-center items-center'>
-          {renderCards.length === ProjectCards.length ? null : <span className='flex text-link-blue text-[16px] cursor-pointer' onClick={()=> loadMore()}>Show More <ChevronDown /></span>} 
+          {renderCards.length === ProjectCards.length ? null : <span className='flex text-link-blue text-[16px] cursor-pointer' onClick={()=> loadMore()}>show more <ChevronDown /></span>} 
         </div>
     </section>
   )
