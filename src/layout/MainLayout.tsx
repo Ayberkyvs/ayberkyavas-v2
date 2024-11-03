@@ -15,7 +15,7 @@ export default function MainLayout() {
         </main>
         <Footer />
         <Scrolltotop />
-      <BackgroundGradient variant="footer" /> 
+      <BackgroundGradient variant="footer" />
     </div>
   )
 }

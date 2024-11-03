@@ -10,7 +10,7 @@ export default function ProjectCard({ data, isResponsive = true }: { data: any, 
      dark:from-[#1E1C32]/50 dark:to-[#2B161D]/50 h-fit p-[12px]
       text-primary-text cursor-pointer ${isResponsive ? "md:flex-col w-full md:w-[224px] md:min-h-[352px]" : "w-[224px] flex-col md:min-h-[302px]"}`} to={data.link ? data.link : undefined}>
         <div className={`relative ${isResponsive ? "w-[100px] h-[100px] min-w-[100px] min-h-[100px] mr-[12px] md:mr-0" : "w-[200px] h-[200px] min-w-[200px] min-h-[200px]"} rounded-xl md:w-[200px] md:h-[200px] mb-[8px]`}>
-          <BadgeElement className={`absolute top-[8px] left-[8px] ${data.badgeText ? "flex": "hidden"} justify-center items-center w-fit text-center px-[0.2em] py-[0.1em] text-sm md:text-base uppercase text-white`} variant={data.badgeType}>{badgeText == "completed" ? <Check className="w-[1em] h-[1em]" /> : badgeText == "now" ? <Clock className="w-[1em] h-[1em]"/> : badgeText == "paused" ? <X className="w-[1em] h-[1em]"/> : data.badgeText}</BadgeElement>
+          <BadgeElement className={`absolute top-[8px] left-[8px] ${data.badgeText ? "flex": "hidden"} justify-center items-center w-fit text-center text-xs md:text-sm uppercase text-white`} variant={data.badgeType}>{badgeText == "completed" ? <Check className="w-[1.2em] h-[1.2em]" /> : badgeText == "now" ? <Clock className="w-[1.2em] h-[1.2em]"/> : badgeText == "paused" ? <X className="w-[1.2em] h-[1.2em]"/> : data.badgeText}</BadgeElement>
           <LazyLoadImage src={data.image} alt={data.company + " logo"} className="w-full h-full rounded-xl" draggable={false} />
         </div>
         <div className={`flex flex-col w-fit h-fit place-self-start`}>

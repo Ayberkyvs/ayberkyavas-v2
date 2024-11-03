@@ -17,7 +17,7 @@
     font-style: normal;
     font-display: swap;
 }
-  
+
 
 @layer base {
     :root {
@@ -26,7 +26,7 @@
         --light-gray:  rgba(74, 87, 111, 0.7);
         --gray-100: rgba(48, 52, 77, 0.2);
         --primary-bg: #f5f7ff;
-        --nav-bg: rgba(255,255,255, 0.2);
+        --nav-bg: rgba(255, 255, 255, 0.2);
         --nav-menu-bg: rgba(255, 255, 255, 0.7);
         --nav-border: rgba(82,82,82, 0.2);
 
@@ -119,8 +119,7 @@ body{
     z-index: -1;
 }
 .gradient-retro {
-    background: var(--blue);
-    background: linear-gradient(90deg, var(--link-blue) 0%, var(--blue) 25%, var(--pink) 75%, var(--red) 100%);
+  background: linear-gradient(90deg, var(--link-blue) 0%, var(--blue) 25%, var(--pink) 75%, var(--red) 100%) no-repeat;
 }
 
 /* Kayan Yazılar CSS */
@@ -128,14 +127,14 @@ body{
     overflow: hidden;
     opacity: 0.9;
   }
-  
+
   .scroller__inner {
     padding-block: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
-  
+
   .scroller[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: linear-gradient(
@@ -147,42 +146,42 @@ body{
     );
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   }
-  
+
   .scroller[data-animated="true"] .scroller__inner {
     width: max-content;
     flex-wrap: nowrap;
     animation: scroll var(--_animation-duration, 40s)
       var(--_animation-direction, forwards) linear infinite;
   }
-  
+
   .scroller[data-direction="right"] {
     --_animation-direction: reverse;
   }
-  
+
   .scroller[data-direction="left"] {
     --_animation-direction: forwards;
   }
-  
+
   .scroller[data-speed="fast"] {
     --_animation-duration: 20s;
   }
-  
+
   .scroller[data-speed="slow"] {
     --_animation-duration: 60s;
   }
-  
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
   }
-  
+
   .tag-list {
     margin: 0;
     padding-inline: 0;
     list-style: none;
   }
-  
+
   .tag-list li {
     font-size: 12px;
     letter-spacing: 0.2em;

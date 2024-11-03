@@ -14,8 +14,8 @@ import Pinyin from "../assets/works/PinyinMarine/pinyinmarine.webp"
 import Digime from "../assets/works/digime.webp"
 import Parkpin from "../assets/works/parkpin.webp"
 import Horizon from "../assets/works/HorizonRocket/horizon.webp"
-import Password from "../assets/works/password.webp"
-import NotWhatsapp from "../assets/works/notwhatsapp.webp"
+// import Password from "../assets/works/password.webp"
+// import NotWhatsapp from "../assets/works/notwhatsapp.webp"
 import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.webp"
 import Reform from "../assets/works/ReformMarine/reformmarine.webp"
 
@@ -30,7 +30,7 @@ import Pixlre from "../assets/appstack/pixlre.webp"
 import Powertoys from "../assets/appstack/powertoys.webp"
 import Steam from "../assets/appstack/steam.webp"
 
-// References 
+// References
 
 import BurakErarslan from "../assets/references/burakerarslan.webp"
 import DoganIsleyen from "../assets/references/doganisleyen.webp"
@@ -82,13 +82,14 @@ export const data = {
             image: Memoji,
             title: "ayberk yavaş",
             subtitle: "Front-End Developer",
-            paragraph: "An experienced Front-End Developer with a successful track record in developing innovative web designs and features. Proficient in HTML, CSS, SCSS, Tailwind, JavaScript, TypeScript, React, and databases, with the ability to quickly learn new technologies. Demonstrated success in identifying and resolving complex code issues.",
+            paragraph: 'a young Frontend Developer (for now), who is constantly improving himself, moving forward in my software adventure with my slogan "I love the feeling of creation". I am most specialized in React, Router V6, Material Design, JavaScript, TypeScript, CSS Modules, Databases, Accessibility & Usability, UX/UI Process, Figma, Version Control, Build Automation, Working w/API\'s',
             resume: AyberkResume,
             quota: "I enjoy coding for",
             company: "@myself",
             skills: [
-                'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'SCSS',
-                'TailwindCSS', 'ReactJS', 'SQL', 'Router V6', 'API\'S', "C#", "Git & Github"
+                'API\'s', 'Router V6', 'CSS Modules', 'TypeScript', 'Figma', 'Material Design', 'Usability',
+                'Accessibility', 'JavaScript', 'UX/UI Process', 'Build Automation', 'Git & Github',
+                'TailwindCSS', 'ReactJS', 'Databases'
             ],
         },
         featured: {
@@ -149,7 +150,7 @@ export const data = {
                 //     paragraph: "A professional certification I'm working on",
                 // },
                 {
-                    id: 10,
+                    id: 11,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
@@ -159,13 +160,24 @@ export const data = {
                     type: "certificate"
                 },
                 {
-                    id: 9,
+                    id: 10,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Meta,
                     title: "Meta Front-End Professional",
                     company: "Meta",
                     paragraph: "A Frontend Course with extensive content that I am working on",
+                    type: "certificate"
+                },
+                {
+                    id: 9,
+                    badgeType: "green",
+                    badgeText: "new",
+                    image: Meta,
+                    title: "Principles of UX/UI Design",
+                    company: "Meta",
+                    paragraph: "I learned a lot about UI and UX in detail, I gained paths to follow before coding",
+                    link: "https://coursera.org/share/19e91ead6b72b38244b77d1e6380b5c1",
                     type: "certificate"
                 },
                 {
@@ -247,12 +259,12 @@ export const data = {
                 },
                 {
                     id: 1,
-                    badgeType: "yellow",
-                    badgeText: "now",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: Izmirekonomi,
                     title: "Computer Programming",
                     company: "Izmir University of Economics",
-                    paragraph: "The certificate I will receive after completing my education at Izmir University of Economics",
+                    paragraph: "I graduated with a 3.44 / 4 GPA in Computer programming.",
                     type: "certificate"
                 },
             ]
@@ -263,11 +275,12 @@ export const data = {
                 {
                     id: 9,
                     badgeType: "green",
-                    badgeText: "completed",
+                    badgeText: "new",
                     image: Reform,
                     title: "Business Website",
                     company: "Reform Marine",
                     paragraph: "Reform Marine provides cargo ship service and parts.",
+                    link: "https://www.reformmarine.com/",
                     type: "work"
                 },
                 {
@@ -281,27 +294,27 @@ export const data = {
                     link: `/projects/1`,
                     type: "work"
                 },
-                {
-                    id: 7,
-                    badgeType: "red",
-                    badgeText: "PAUSED",
-                    image: NotWhatsapp,
-                    title: "NotWhatsapp",
-                    company: "Ayberk Yavaş",
-                    paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
-                    type: "work"
-                },
-                {
-                    id: 6,
-                    badgeType: "red",
-                    badgeText: "PAUSED",
-                    image: Password,
-                    title: "Password Generator Extension",
-                    company: "Ayberk Yavaş",
-                    paragraph: "Never use an insecure password again",
-                    link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
-                    type: "work"
-                },
+                // {
+                //     id: 7,
+                //     badgeType: "red",
+                //     badgeText: "PAUSED",
+                //     image: NotWhatsapp,
+                //     title: "NotWhatsapp",
+                //     company: "Ayberk Yavaş",
+                //     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
+                //     type: "work"
+                // },
+                // {
+                //     id: 6,
+                //     badgeType: "red",
+                //     badgeText: "PAUSED",
+                //     image: Password,
+                //     title: "Password Generator Extension",
+                //     company: "Ayberk Yavaş",
+                //     paragraph: "Never use an insecure password again",
+                //     link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
+                //     type: "work"
+                // },
                 {
                     id: 5,
                     badgeType: "green",
@@ -365,7 +378,7 @@ export const data = {
                 {
                     image: BurakErarslan,
                     title: "Burak Erarslan",
-                    company: "Co-Founder at Pinyin Marine",
+                    company: "Co-Founder at Reform Marine",
                     paragraph: "He has developed himself in web services and has a strong communication skills",
                     socials: [
                         {

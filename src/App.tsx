@@ -8,16 +8,15 @@ import {
 import { createContext, lazy, Suspense } from 'react';
 import { data } from './data/data';
 import "./server";
-import { loader } from "@/pages/ProjectDetail";
-import Certificates from "./pages/Certificates";
+import ProjectDetail, { loader } from "@/pages/ProjectDetail";
 const Home = lazy(()=> import("@/pages/Home"));
 const MainLayout = lazy(()=> import("@/layout/MainLayout"));
 const Projects = lazy(()=> import("@/pages/Projects"));
-const ProjectDetail = lazy(()=> import("@/pages/ProjectDetail"));
 const AppStack = lazy(()=> import("@/pages/AppStack"));
 const Loader = lazy(()=> import("@/pages/Loader"));
 const NotFound = lazy(()=> import("@/pages/NotFound"));
 const ErrorBoundary = lazy(()=> import("@/components/ErrorBoundary"));
+const Certificates = lazy(()=> import("@/pages/Certificates"));
 
 export const DataContext = createContext(data);
 
