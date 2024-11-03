@@ -1,0 +1,1 @@
+import{j as i}from"./index-CsuO1ICU.js";import{m as t}from"./motion-CIAo-Tbj.js";function e({variant:a}){return i.jsx(t.div,{className:`${a==="header"?"gradient-top":"gradient-bottom"} w-full md:max-w-[1440px] h-[659px] overflow-hidden`,draggable:!1,initial:{opacity:0},whileInView:{opacity:1},transition:{duration:.5},"aria-disabled":"true"})}export{e as default};
