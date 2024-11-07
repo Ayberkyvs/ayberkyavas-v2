@@ -1,7 +1,7 @@
 import mainLogo from "../assets/mainLogo.webp"
 import Memoji from "../assets/ayberk_memoji.webp";
 
-import AyberkResume from "../assets/resume/ayberk_resume.pdf"
+import AyberkResume from "../assets/resume/ayberkyavas_censored.pdf"
 
 import Turkcell from "../assets/certificates/turkcell.webp";
 import Scrimba from "../assets/certificates/scrimba.webp";
@@ -82,7 +82,7 @@ export const data = {
             image: Memoji,
             title: "ayberk yavaş",
             subtitle: "Front-End Developer",
-            paragraph: 'a young Frontend Developer (for now), who is constantly improving himself, moving forward in my software adventure with my slogan "I love the feeling of creation". I am most specialized in React, Router V6, Material Design, JavaScript, TypeScript, CSS Modules, Databases, Accessibility & Usability, UX/UI Process, Figma, Version Control, Build Automation, Working w/API\'s',
+            paragraph: 'a young Frontend Developer (for now), who is constantly improving himself, moving forward in my software adventure with my motto "I love the feeling of creation". I am most specialized in React, Router V6, Material Design, JavaScript, TypeScript, CSS Modules, Databases, Accessibility & Usability, UX/UI Process, Figma, Version Control, Build Automation, Working w/API\'s',
             resume: AyberkResume,
             quota: "I enjoy coding for",
             company: "@myself",
