@@ -68,7 +68,7 @@ export default function App() {
   return (
     <>
       <Suspense fallback={<Loader/>}>
-        <DataContext.Provider value={data}>  
+        <DataContext.Provider value={data}>
           <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
             <RouterProvider router={router} future={{ v7_startTransition: true }}/>
           </ThemeProvider>
