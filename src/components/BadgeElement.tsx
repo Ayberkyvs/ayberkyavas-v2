@@ -7,7 +7,7 @@ export default function BadgeElement({className = "", children, variant = "retro
     }else if (variant === "green"){
         styles = "bg-green"
     }else if (variant === "yellow"){
-        styles = "bg-yellow text-black"
+        styles = "bg-yellow"
     }else if (variant === "red"){
         styles = "bg-red"
     }else if (variant === "pink"){

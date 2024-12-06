@@ -1,9 +1,8 @@
 import mainLogo from "../assets/mainLogo.webp"
 import Memoji from "../assets/ayberk_memoji.webp";
 
-import AyberkResume from "../assets/resume/ayberk_resume.pdf"
+import AyberkResume from "../assets/resume/ayberkyavas_censored.pdf"
 
-import Turkcell from "../assets/certificates/turkcell.webp";
 import Scrimba from "../assets/certificates/scrimba.webp";
 import Meta from "../assets/certificates/meta.webp";
 import Izmirekonomi from "../assets/certificates/izmirekonomi.webp";
@@ -14,23 +13,26 @@ import Pinyin from "../assets/works/PinyinMarine/pinyinmarine.webp"
 import Digime from "../assets/works/digime.webp"
 import Parkpin from "../assets/works/parkpin.webp"
 import Horizon from "../assets/works/HorizonRocket/horizon.webp"
-import Password from "../assets/works/password.webp"
-import NotWhatsapp from "../assets/works/notwhatsapp.webp"
+// import Password from "../assets/works/password.webp"
+// import NotWhatsapp from "../assets/works/notwhatsapp.webp"
 import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.webp"
 import Reform from "../assets/works/ReformMarine/reformmarine.webp"
 
 import Figma from "../assets/appstack/figma.webp"
 import Spotify from "../assets/appstack/spotify.webp"
-import Discord from "../assets/appstack/discord.webp"
+// import Discord from "../assets/appstack/discord.webp"
+// import Brave from '../assets/appstack/brave.webp'
+import Element from "../assets/appstack/element.webp"
 import Vscode from "../assets/appstack/vscode.webp"
-import Brave from "../assets/appstack/brave.webp"
+import Edge from "../assets/appstack/edge.webp"
 import Copilot from "../assets/appstack/copilot.webp"
 import Github from "../assets/appstack/github.webp"
 import Pixlre from "../assets/appstack/pixlre.webp"
 import Powertoys from "../assets/appstack/powertoys.webp"
-import Steam from "../assets/appstack/steam.webp"
+// import Steam from "../assets/appstack/steam.webp"
+import Epic from "../assets/appstack/epic.webp"
 
-// References 
+// References
 
 import BurakErarslan from "../assets/references/burakerarslan.webp"
 import DoganIsleyen from "../assets/references/doganisleyen.webp"
@@ -82,39 +84,40 @@ export const data = {
             image: Memoji,
             title: "ayberk yavaş",
             subtitle: "Front-End Developer",
-            paragraph: "An experienced Front-End Developer with a successful track record in developing innovative web designs and features. Proficient in HTML, CSS, SCSS, Tailwind, JavaScript, TypeScript, React, and databases, with the ability to quickly learn new technologies. Demonstrated success in identifying and resolving complex code issues.",
+            paragraph: 'a young Frontend Developer (for now), who is constantly improving himself, moving forward in my software adventure with my motto "I love the feeling of creation". I am most specialized in React, Router V6, Material Design, JavaScript, TypeScript, CSS Modules, Databases, Accessibility & Usability, UX/UI Process, Figma, Version Control, Build Automation, Working w/API\'s',
             resume: AyberkResume,
             quota: "I enjoy coding for",
             company: "@myself",
             skills: [
-                'HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'SCSS',
-                'TailwindCSS', 'ReactJS', 'SQL', 'Router V6', 'API\'S', "C#", "Git & Github"
+                'REST API\'s', 'Router V6', 'CSS Modules', 'TypeScript', 'Figma', 'Material Design', 'Usability',
+                'Accessibility', 'JavaScript', 'UX/UI Process', 'Build Automation', 'Git & Github',
+                'TailwindCSS', 'ReactJS', 'Databases', 'Node.js', 'Express.js', 'MongoDB', 'Rapid Prototyping', 'Unit Testing'
             ],
         },
         featured: {
             title: "PINNED",
             items: [
                 {
-                    id: 4,
+                    id: 9,
                     badgeType: "green",
-                    badgeText: "completed",
-                    image: Horizon,
-                    title: "Teknofest Rocket Competition",
-                    company: "Horizon Rocket",
-                    paragraph: "Horizon Rocket is a team established at Izmir University of Economics for the Teknofest rocket competition.",
-                    link: "/projects/4",
+                    badgeText: "new",
+                    image: Reform,
+                    title: "Business Website",
+                    company: "Reform Marine",
+                    paragraph: "Reform Marine offers customized solutions to the maritime industry as a company specialized in electrical systems maintenance and repair.",
+                    link: "https://www.reformmarine.com/",
                     type: "work"
                 },
                 {
-                    id: 6,
+                    id: 5,
                     badgeType: "green",
-                    badgeText: "Completed",
-                    image: Izmirekonomi,
-                    title: "Gameathon Admin Panel",
-                    company: "Izmir University of Economics",
-                    paragraph: "I have independently developed a registration website and an admin panel for the IEU Game Development Event.",
-                    link: "/projects/6",
-                    type: "work"
+                    badgeText: "completed",
+                    image: Meta,
+                    title: "Meta Front-End Professional (10 Certificates)",
+                    company: "Meta",
+                    paragraph: "Hello! At the end of a 7-month process, I completed a total of 400 hours and received 9 certificates and earned the Meta Certified Front-End Developer Professional Certificate. ",
+                    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/G1Z8VD7P21EA',
+                    type: "certificate"
                 },
                 {
                     id: 5,
@@ -132,24 +135,8 @@ export const data = {
         certificates: {
             title: "Certificates & Education",
             items: [
-                // {
-                //     badgeType: "retro",
-                //     badgeText: "Upcoming",
-                //     image: IBM,
-                //     title: "Back-End Javascript Developer",
-                //     company: "IBM",
-                //     paragraph: "The certificate I will receive after completing the full-stack course given by IBM",
-                // },
-                // {
-                //     badgeType: "yellow",
-                //     badgeText: "now",
-                //     image: Meta,
-                //     title: "Front-End Developer Proffesional",
-                //     company: "Meta",
-                //     paragraph: "A professional certification I'm working on",
-                // },
                 {
-                    id: 10,
+                    id: 8,
                     badgeType: "yellow",
                     badgeText: "now",
                     image: Scrimba,
@@ -159,46 +146,25 @@ export const data = {
                     type: "certificate"
                 },
                 {
-                    id: 9,
-                    badgeType: "yellow",
-                    badgeText: "now",
-                    image: Meta,
-                    title: "Meta Front-End Professional",
-                    company: "Meta",
-                    paragraph: "A Frontend Course with extensive content that I am working on",
-                    type: "certificate"
-                },
-                {
-                    id: 8,
-                    badgeType: "green",
-                    badgeText: "completed",
-                    image: Meta,
-                    title: "Advanced React",
-                    company: "Meta",
-                    paragraph: "I have completed Meta’s 26-hour Advanced React course.",
-                    link: "https://coursera.org/share/d36a00b6c93a6f54ceafcd33a86895ae",
-                    type: "certificate"
-                },
-                {
                     id: 7,
                     badgeType: "green",
                     badgeText: "completed",
-                    image: Meta,
-                    title: "React Basics",
-                    company: "Meta",
-                    paragraph: "I have completed Meta’s 26-hour React Basics course.",
-                    link: "https://coursera.org/share/0f188e8d2126c36e6eab8f8eaec43e00",
+                    image: FreeCodeCamp,
+                    title: "Back-End Development and APIs",
+                    company: "freeCodeCamp",
+                    paragraph: "I have successfully completed 300 hours of Express.js, Node.js, MongoDB training.",
+                    link: "https://www.freecodecamp.org/certification/ayberksch/back-end-development-and-apis",
                     type: "certificate"
                 },
                 {
                     id: 6,
                     badgeType: "green",
                     badgeText: "completed",
-                    image: Meta,
-                    title: "Version Control",
-                    company: "Meta",
-                    paragraph: "I have completed Meta’s 13-hour Version Control course. I learned detailed information about Bash, Git, Github.",
-                    link: "https://coursera.org/share/5a302cea4079eff8fe242141706256dc",
+                    image: Scrimba,
+                    title: "Learn TypeScript /w Bob Ziroll",
+                    company: "Scrimba",
+                    paragraph: "A TypeScript Course with extensive content",
+                    link: "https://scrimba.com/certificate-cert24zAwJ77fGQG6kVUkgT9AGiob85Zjtc3fQEci",
                     type: "certificate"
                 },
                 {
@@ -206,53 +172,53 @@ export const data = {
                     badgeType: "green",
                     badgeText: "completed",
                     image: Meta,
-                    title: "Programming with Javascript",
+                    title: "Meta Front-End Professional (10 Certificates)",
                     company: "Meta",
-                    paragraph: "I have completed Meta’s 42-hour JavaScript course. I earned a certificate with a success rate of 97.73%.",
-                    link: "https://coursera.org/share/ab82b952a8e859f2f7bf40bf894632c7",
+                    paragraph: "Hello! At the end of a 7-month process, I completed a total of 400 hours and received 9 certificates and earned the Meta Certified Front-End Developer Professional Certificate. ",
+                    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/G1Z8VD7P21EA',
                     type: "certificate"
                 },
-                {
-                    id: 4,
-                    badgeType: "green",
-                    badgeText: "completed",
-                    image: FreeCodeCamp,
-                    title: "Responsive Web Design",
-                    company: "freeCodeCamp",
-                    paragraph: "I have successfully completed 300 hours of HTML and CSS training.",
-                    link: "https://www.freecodecamp.org/certification/ayberksch/responsive-web-design",
-                    type: "certificate"
-                },
+                // {
+                //     id: 4,
+                //     badgeType: "green",
+                //     badgeText: "completed",
+                //     image: FreeCodeCamp,
+                //     title: "Responsive Web Design",
+                //     company: "freeCodeCamp",
+                //     paragraph: "I have successfully completed 300 hours of HTML and CSS training.",
+                //     link: "https://www.freecodecamp.org/certification/ayberksch/responsive-web-design",
+                //     type: "certificate"
+                // },
                 {
                     id: 3,
                     badgeType: "green",
                     badgeText: "completed",
                     image: Scrimba,
-                    title: "Advanced React",
+                    title: "React Router",
                     company: "Scrimba",
-                    paragraph: "I successfully graduating from Advanced React",
-                    link: "https://scrimba.com/certificate/uvvkNNUx/greact",
+                    paragraph: "I successfully completed React Router V6 course.",
+                    link: "https://scrimba.com/certificate-cert2uNjfK9m1mh8CDLt8DEwZNkjD1fGD9FZmkT",
                     type: "certificate"
                 },
                 {
                     id: 2,
                     badgeType: "green",
                     badgeText: "completed",
-                    image: Turkcell,
-                    title: "React Development",
-                    company: "Turkcell",
-                    paragraph: "I am happy to share the four certifications I have completed.",
-                    link: "https://gelecegiyazanlar.turkcell.com.tr/certificate/dWlkMzEzNTI2Y2lkNDcxOTZxaWQxNTRlbmQ=",
+                    image: Scrimba,
+                    title: "Advanced React",
+                    company: "Scrimba",
+                    paragraph: "I successfully completed Advanced React.",
+                    link: "https://scrimba.com/certificate-cert24zAwJ77fGQG6kVUkgT9AFeZa2z5tDLViKRBb",
                     type: "certificate"
                 },
                 {
                     id: 1,
-                    badgeType: "yellow",
-                    badgeText: "now",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: Izmirekonomi,
                     title: "Computer Programming",
                     company: "Izmir University of Economics",
-                    paragraph: "The certificate I will receive after completing my education at Izmir University of Economics",
+                    paragraph: "I graduated with a 3.44 / 4 GPA in Computer programming.",
                     type: "certificate"
                 },
             ]
@@ -262,18 +228,19 @@ export const data = {
             items: [
                 {
                     id: 9,
-                    badgeType: "yellow",
-                    badgeText: "Now",
+                    badgeType: "green",
+                    badgeText: "new",
                     image: Reform,
                     title: "Business Website",
                     company: "Reform Marine",
-                    paragraph: "Reform Marine provides cargo ship service and parts.",
+                    paragraph: "Reform Marine offers customized solutions to the maritime industry as a company specialized in electrical systems maintenance and repair.",
+                    link: "https://www.reformmarine.com/",
                     type: "work"
                 },
                 {
                     id: 8,
-                    badgeType: "pink",
-                    badgeText: "Update",
+                    badgeType: "green",
+                    badgeText: "completed",
                     image: PortfolioWebsiteLogo,
                     title: "Portfolio Website",
                     company: "Ayberk Yavaş",
@@ -281,27 +248,27 @@ export const data = {
                     link: `/projects/1`,
                     type: "work"
                 },
-                {
-                    id: 7,
-                    badgeType: "red",
-                    badgeText: "PAUSED",
-                    image: NotWhatsapp,
-                    title: "NotWhatsapp",
-                    company: "Ayberk Yavaş",
-                    paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
-                    type: "work"
-                },
-                {
-                    id: 6,
-                    badgeType: "red",
-                    badgeText: "PAUSED",
-                    image: Password,
-                    title: "Password Generator Extension",
-                    company: "Ayberk Yavaş",
-                    paragraph: "Never use an insecure password again",
-                    link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
-                    type: "work"
-                },
+                // {
+                //     id: 7,
+                //     badgeType: "red",
+                //     badgeText: "PAUSED",
+                //     image: NotWhatsapp,
+                //     title: "NotWhatsapp",
+                //     company: "Ayberk Yavaş",
+                //     paragraph: "I'm developing NotWhatsapp, like Whatsapp but better UI",
+                //     type: "work"
+                // },
+                // {
+                //     id: 6,
+                //     badgeType: "red",
+                //     badgeText: "PAUSED",
+                //     image: Password,
+                //     title: "Password Generator Extension",
+                //     company: "Ayberk Yavaş",
+                //     paragraph: "Never use an insecure password again",
+                //     link: "https://github.com/Ayberkyvs/password-generator-checker-extension",
+                //     type: "work"
+                // },
                 {
                     id: 5,
                     badgeType: "green",
@@ -365,7 +332,7 @@ export const data = {
                 {
                     image: BurakErarslan,
                     title: "Burak Erarslan",
-                    company: "Co-Founder at Pinyin Marine",
+                    company: "Co-Founder at Reform Marine",
                     paragraph: "He has developed himself in web services and has a strong communication skills",
                     socials: [
                         {
@@ -458,15 +425,15 @@ export const data = {
                 badgeType: "retro",
                 badgeText: "AI",
                 image: Copilot,
-                title: "Microsoft Copilot",
-                paragraph: "Microsoft Copilot is your AI-powered coding assistant, enhancing coding efficiency."
+                title: "Github Copilot",
+                paragraph: "GitHub Copilot is an AI pair programmer that helps you write code faster."
             },
             {
                 badgeType: "yellow",
                 badgeText: "Browser",
-                image: Brave,
-                title: "Brave",
-                paragraph: "Brave is an open source web browser software built on Chromium."
+                image: Edge,
+                title: "Microsoft Edge",
+                paragraph: "Microsoft Edge is a fast and secure browser that offers a range of features and customization options."
             },
             {
                 badgeType: "pink",
@@ -485,16 +452,16 @@ export const data = {
             {
                 badgeType: "linkblue",
                 badgeText: "Communication",
-                image: Discord,
-                title: "Discord",
-                paragraph: "The voice and text chat features are top-notch and the app is easy to use.",
+                image: Element,
+                title: "Element",
+                paragraph: "Element is a secure and private messaging app that offers end-to-end encryption.",
             },
             {
                 badgeType: "green",
                 badgeText: "Entertainment",
-                image: Steam,
-                title: "Steam",
-                paragraph: "Steam is the ultimate gaming platform with a vast library and social networking features."
+                image: Epic,
+                title: "Epic Games",
+                paragraph: "Epic Games is a digital storefront for games and software.",
             },
             {
                 badgeType: "red",

@@ -35,7 +35,7 @@ module.exports = {
         'black-70': "var(--black-70)",
         'link-border': "var(--link-border)",
         'link-blue': "var(--link-blue)"
-      },     
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
