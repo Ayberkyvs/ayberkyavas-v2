@@ -17,6 +17,7 @@ import Horizon from "../assets/works/HorizonRocket/horizon.webp"
 // import NotWhatsapp from "../assets/works/notwhatsapp.webp"
 import PortfolioWebsiteLogo from "../assets/works/PortfolioWebsite/ayberk.webp"
 import Reform from "../assets/works/ReformMarine/reformmarine.webp"
+import X from "../assets/works/X/x_logo.png"
 
 import Figma from "../assets/appstack/figma.webp"
 import Spotify from "../assets/appstack/spotify.webp"
@@ -98,9 +99,20 @@ export const data = {
             title: "PINNED",
             items: [
                 {
+                    id: 10,
+                    badgeType: "yellow",
+                    badgeText: "now",
+                    image: X,
+                    title: "Fullstack X Clone",
+                    company: "Ayberk Yavaş",
+                    paragraph: "I am developing a full-stack working clone of the X website. I use MERN stack for this project.",
+                    link: "",
+                    type: "work"
+                },
+                {
                     id: 9,
                     badgeType: "green",
-                    badgeText: "new",
+                    badgeText: "completed",
                     image: Reform,
                     title: "Business Website",
                     company: "Reform Marine",
@@ -118,17 +130,6 @@ export const data = {
                     paragraph: "Hello! At the end of a 7-month process, I completed a total of 400 hours and received 9 certificates and earned the Meta Certified Front-End Developer Professional Certificate. ",
                     link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/G1Z8VD7P21EA',
                     type: "certificate"
-                },
-                {
-                    id: 5,
-                    badgeType: "green",
-                    badgeText: "Completed",
-                    image: Parkpin,
-                    title: "Parkpin Smart Car Park",
-                    company: "Ayberk & Çetin",
-                    paragraph: "Parkpin Smart Parking is an application that allows users to view all parking lots on a map, obtain information about the parking lots, reserve a spot, and make online payments.",
-                    link: "https://github.com/LoyalEnv0y/ParkPin-V2",
-                    type: "work"
                 },
             ]
         },
@@ -227,11 +228,22 @@ export const data = {
             title: "projects & works",
             items: [
                 {
+                    id: 10,
+                    badgeType: "yellow",
+                    badgeText: "now",
+                    image: X,
+                    title: "Fullstack X Clone",
+                    company: "Ayberk Yavaş",
+                    paragraph: "I am developing a full-stack working clone of the X website. I use MERN stack for this project.",
+                    link: "",
+                    type: "work"
+                },
+                {
                     id: 9,
                     badgeType: "green",
-                    badgeText: "new",
+                    badgeText: "completed",
                     image: Reform,
-                    title: "Business Website",
+                    title: "Reform Marine Freelance",
                     company: "Reform Marine",
                     paragraph: "Reform Marine offers customized solutions to the maritime industry as a company specialized in electrical systems maintenance and repair.",
                     link: "https://www.reformmarine.com/",
@@ -244,7 +256,7 @@ export const data = {
                     image: PortfolioWebsiteLogo,
                     title: "Portfolio Website",
                     company: "Ayberk Yavaş",
-                    paragraph: "I am developing my portfolio website. (you are currently using)",
+                    paragraph: "I developed my personal website with React, TailwindCSS.",
                     link: `/projects/1`,
                     type: "work"
                 },
@@ -318,7 +330,7 @@ export const data = {
                     badgeType: "green",
                     badgeText: "completed",
                     image: Pinyin,
-                    title: "Pinyin Marine",
+                    title: "Pinyin Marine Freelance",
                     company: "Pinyin Marine",
                     paragraph: "The website is my first corporate work for Pinyin Marine' company.",
                     link: "/projects/8",
