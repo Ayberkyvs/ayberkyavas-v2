@@ -1,7 +1,7 @@
 import mainLogo from "../assets/mainLogo.webp"
 import Memoji from "../assets/ayberk_memoji.webp";
 
-import AyberkResume from "../assets/resume/ayberkyavas_censored.pdf"
+import AyberkResume from "../assets/resume/frontend_developer_ayberk_yavas.pdf"
 
 import Scrimba from "../assets/certificates/scrimba.webp";
 import Meta from "../assets/certificates/meta.webp";
