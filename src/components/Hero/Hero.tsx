@@ -6,7 +6,7 @@ export default function Hero({data}: {data: any}) {
     <section className="w-full h-fit overflow-hidden">
         <div className="flex items-center gap-[16px] w-fit h-[102px] ">
             <img src={data.image} alt="Ayberk Memoji" className="w-[84px] h-[84px] bg-link-blue rounded-full" draggable={false}/>
-            <div>
+            <div className="flex flex-col items-start justify-center gap-1">
                 <h1 className="flex items-center justify-center gap-2 heading-1 leading-[1.1em] whitespace-nowrap font-semibold">{data.title}  <BadgeCheck className="text-link-blue w-[0.8em] h-[0.8em] place-self-center"/></h1>
                 <p className="text-light-gray text-base leading-6">{data.subtitle}</p>
             </div>
