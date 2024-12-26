@@ -133,16 +133,16 @@ export const data = {
           type: "work",
         },
         {
-          id: 9,
+          id: 8,
           badgeType: "green",
           badgeText: "completed",
-          image: Reform,
-          title: "Business Website",
-          company: "Reform Marine",
+          image: MongoDB,
+          title: "MongoDB for NodeJS Developers",
+          company: "MongoDB University",
           paragraph:
-            "Reform Marine offers customized solutions to the maritime industry as a company specialized in electrical systems maintenance and repair.",
-          link: "https://www.reformmarine.com/",
-          type: "work",
+            "I have successfully completed the MongoDB for NodeJS Developers course.",
+          type: "certificate",
+          link: "https://learn.mongodb.com/c/0uKoBeghRVqj29kFOM_IMw"
         },
         {
           id: 5,
@@ -165,23 +165,24 @@ export const data = {
           id: 9,
           badgeType: "yellow",
           badgeText: "now",
-          image: MongoDB,
-          title: "MongoDB for NodeJS Developers",
-          company: "MongoDB University",
-          paragraph:
-            "I am currently taking the MongoDB for NodeJS Developers course.",
-          type: "certificate",
-        },
-        {
-          id: 8,
-          badgeType: "yellow",
-          badgeText: "now",
           image: Scrimba,
           title: "The Front-End Developer",
           company: "Scrimba",
           paragraph:
             "A Frontend Course with extensive content that I am working on",
           type: "certificate",
+        },
+        {
+          id: 8,
+          badgeType: "green",
+          badgeText: "completed",
+          image: MongoDB,
+          title: "MongoDB for NodeJS Developers",
+          company: "MongoDB University",
+          paragraph:
+            "I have successfully completed the MongoDB for NodeJS Developers course.",
+          type: "certificate",
+          link: "https://learn.mongodb.com/c/0uKoBeghRVqj29kFOM_IMw"
         },
         {
           id: 7,
