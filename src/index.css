@@ -26,7 +26,7 @@
         --light-gray:  rgba(74, 87, 111, 0.7);
         --gray-100: rgba(48, 52, 77, 0.2);
         --primary-bg: #f5f7ff;
-        --nav-bg: rgba(255, 255, 255, 0.2);
+        --nav-bg: rgba(255, 255, 255, 0.5);
         --nav-menu-bg: rgba(255, 255, 255, 0.7);
         --nav-border: rgba(82,82,82, 0.2);
 
@@ -46,7 +46,7 @@
         --light-gray: rgba(114, 120, 136, 0.6);
         --gray-100: rgba(255, 255, 255, 0.2);
         --primary-bg: #05070f;
-        --nav-bg: rgba(28, 18, 22, 0.4);
+        --nav-bg: rgba(28, 18, 22, 0.6);
         --nav-border: rgba(82,82,82, 0.2);
 
         --orange: rgba(255, 105, 40, 0.8);

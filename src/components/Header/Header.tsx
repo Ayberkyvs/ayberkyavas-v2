@@ -11,8 +11,8 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const headerData = useContext(DataContext).en.header
   return (
-    <header className="absolute top-0 w-screen max-w-[708px] justify-between h-fit p-[16px] 
-    rounded-2xl bg-nav-bg border-nav-border border-[1px] mt-[24px] overflow-hidden"
+    <header className="sticky top-2 w-screen max-w-[708px] justify-between h-fit p-[16px] 
+    rounded-2xl bg-nav-bg border-nav-border border-[1px] mt-[24px] overflow-hidden z-[99] shadow-lg"
     >
         <div className="flex justify-between items-center w-full h-fit">
             <div className="flex items-center h-fit">

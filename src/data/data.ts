@@ -84,7 +84,7 @@ export const data = {
     },
     hero: {
       image: Ayberk,
-      title: "ayberk yavaş",
+      title: "ayberk yavas",
       subtitle: "Front-End Developer | MERN Stack | UI/UX Designer",
       paragraph:
         "Creative Front-End Developer with expertise in React and the MERN stack. Experienced in building scalable applications and delivering end-to-end solutions. Skilled in modern JavaScript tools like Tanstack Query, Zustand, and Webpack. Focused on performance optimization, responsive design, and seamless user experiences. Passionate about staying up-to date with industry trends and collaborating with cross functional teams to create high-quality web applications.",
